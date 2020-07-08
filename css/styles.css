@@ -10,6 +10,13 @@
     font-family: 'Unica One', cursive;
 }
 
+body {
+    background-image: url(/media/img/random-sky-1xJVW-CoOP0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 h1 {
  font-family: 'Unica One', cursive;
 }
@@ -20,21 +27,37 @@ h2 h3 {
 
 p {
     font-family: 'Poiret One', cursive;
+    color: white;
 }
 
+td {
+    padding: 1em;
+}
 
 div
+
+/* ------------------------- START of Body Container ------------------------ */
 
 /* -------------------------------------------------------------------------- */
 /*                             Body Styles and Ids                            */
 /* -------------------------------------------------------------------------- */
 
+.body-title {
+    width:fit-content;
+    text-align: center;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-2%, -50%);
+    color: white;
+}
 
 
+.body-title > div {
+    width: fit-content;
+}
 /* -------------------------------------------------------------------------- */
 /*                            Footer Styles and Ids                           */
 /* -------------------------------------------------------------------------- */
-
-
 
 /* -------------------------- End of Body Container ------------------------- */
