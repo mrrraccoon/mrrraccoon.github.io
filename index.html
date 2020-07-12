@@ -18,12 +18,18 @@
 
 </head>
 <body>
+
+<!-- ------------------------------- Header -------------------------------- -->
+
     <header id="top">
-    <div style="font-size: 3em; font-family: 'Unica One', cursive; text-align: center; color: white;">T. Simpson Does Things</div>
+    <div style="font-size: 3em; font-family: 'Unica One', cursive; text-align: center; color: white; border: 0; margin: 0;">T. Simpson Does Things</div>
+    
+<!-- ------------------------------- Nav Bar ------------------------------- -->
+    
     <nav>
         <table>
             <tbody>
-                <tr style="color:white;">
+                <tr style="color:white; font-size:x-large; font-family: 'Poiret One', cursive;">
                     <td><a href="/index.html">Home</a></td>
                     <td>About</td>
                     <td><a href="/pgs/proj.html">Projects</a></td>
@@ -37,19 +43,34 @@
     </nav>
     </header>
     
+<!--
+        TODO:
+        Figure out what you have to code to call a viewport dimension change for it to collapse the nav controls into a two row three column table for ipad port.
+        If possible create a hamburger menu on mobile handsets.
+-->
     <main class="body-main">
+
+<!-- ------------------------------- About ------------------------------- -->
+
         <box1 id="#about" style="color: white;">
-            <div style="background-color: #696969; opacity: 0.6; margin-left: auto; margin-right: auto;">
-                <div style="color: white; font-family: 'Unica One', cursive; font-size: 48px;">About</div>
-                Writer
-                Climber
-                Visual Artist
-            
-            
-            </div>
+            <div style="background-color: #696969; opacity: 0.6; ">
+                <div style="color: white; font-family: 'Unica One', cursive; font-size: 2rem; text-align: center;">About</div>
+                <div>T. Simpson is a multimedia artist residing in Houston, Texas.</div>
+                </div>
         </box1>
+
+<!--
+
+        TODO:
+        Come up with something that doesn't sound mildly stupid. Not really sure what to put in this here box. Maybe a picture? Maybe a few lists and links to outside content? But why would you do that if you want to keep them onm the site, that just send them off it. That's dumb, don't do that.  No off-site links for now.
+
+-->
+
+<!-- ------------------------------- Projects ------------------------------- -->
+
         <box2 id="#projects" style="color: white;">
             <div style="background-color: #696969; opacity: 0.6;">
+                <div>
                 <table>
                     <thead>Web Development</thead>
                     <tbody>
@@ -62,8 +83,20 @@
                         <td>The Bone Creek Collection</td>
                     </tbody>
                 </table>
+                </div>
             </div>
         </box2>
+
+
+<!--
+    
+        TODO:    
+        Honestly the whole table idea needs to be  redone. Remove the web design aspect of it. That can be done in the CV page or something. Include different projects and climbing things.
+    
+-->
+
+<!-- ------------------------------ CV ------------------------------ -->
+
         <box3 id="cv" style="color: white;">
             <div style="background-color: #696969; opacity: 0.6;">
             <div style="font-size: 48px; font-family: 'Unica One', cursive;">Curriculum vitae</div>
@@ -72,16 +105,34 @@
 
             </div>
         </box3>
+<!--
+
+        TODO:
+        Like the use of the title but there's nothing really to put here. Maybe create another box for a subsection of another so as there's a need to actually scroll somewhere on the page.
+
+-->
+<!-- ------------------------------ Awards ------------------------------- -->
+
         <box4 id="awards">
             <div style="background-color: #696969; opacity: 0.6;">
             </div>
         </box4>
     </main>
-    <a href="#top" style="color:white;">
-    <svg>    
-    <img class="button" src="/media/icons/chevron-upwards-arrow.svg"></a>
-    </svg>
-    <footer style="text-align: center; font-family: 'Poiret One', sans-serfi; color: white">Copyright &copy; 2020 Pillaged Trashcan, LLC. All Rights Reserved</footer>
+<!--
+
+        TODO:
+        Revamp the whole section. Awards is no longer a linked section. Expand into a Portfolio preview or something. 
+
+        ADD: Footer section to EACH box to create a More... link to the actual page. to be able to interlink pages together.
+-->
+<!-- -------------------------- END of Main Body --------------------------- -->
+
+    <a href="#top" style="color:white;"><img class="button" src="/media/icons/up-arrow.png" style="width: 20px; height: 20px;"></a>
+
+<!-- ------------------------------- Footer -------------------------------- -->
+
+    <footer style="text-align: center; font-family: 'Poiret One', sans-serfi; color: white">Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved</footer>
+
     <!-- ------------------------ CDN Script Injectors ------------------------ -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -92,7 +143,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- ---------------------------- Google Fonts ----------------------------- -->
+<!-- ---------------------------- Google Fonts ----------------------------- -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+One&family=Unica+One&display=swap');
     </style>

@@ -2,15 +2,20 @@
 /*                            Universal Page Styles                           */
 /* -------------------------------------------------------------------------- */
 
-/* -------------------------------- Variables ------------------------------- */
-
 :root {
-    width: 100%;
+    width: 768px;
     height: 100%;
     font-family: 'Playfair Display', serif;
     font-family: 'Poiret One', cursive; 
     font-family: 'Unica One', cursive;
 }
+
+* {
+    padding: 0;
+    border: 1em solid transparent;
+    border-radius: 30px;
+}
+
 
 body {
     background-image: url(/media/img/random-sky-1xJVW-CoOP0-unsplash.jpg);
@@ -20,7 +25,7 @@ body {
 }
 
 h1 {
- font-family: 'Unica One', cursive;
+    font-family: 'Unica One', cursive;
 }
 
 h2 h3 {
@@ -70,5 +75,5 @@ nav > table {
 /* -------------------------------------------------------------------------- */
 /*                            Footer Styles and Ids                           */
 /* -------------------------------------------------------------------------- */
-
+footer { position: absolute; bottom: -97%; margin-left: auto; margin-right: auto;}
 /* -------------------------- End of Body Container ------------------------- */
