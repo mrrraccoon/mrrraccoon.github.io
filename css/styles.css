@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 :root {
-    width: 768px;
+    width: 100%;
     height: 100%;
     font-family: 'Playfair Display', serif;
     font-family: 'Poiret One', cursive; 
@@ -18,7 +18,7 @@
 
 
 body {
-    background-image: url(/media/img/random-sky-1xJVW-CoOP0-unsplash.jpg);
+    background-image: linear-gradient(to bottom right,#555555, black) /*url(/media/img/random-sky-1xJVW-CoOP0-unsplash.jpg)*/;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -75,5 +75,5 @@ nav > table {
 /* -------------------------------------------------------------------------- */
 /*                            Footer Styles and Ids                           */
 /* -------------------------------------------------------------------------- */
-footer { position: absolute; bottom: -97%; margin-left: auto; margin-right: auto;}
+footer { margin-left: auto; margin-right: auto;}
 /* -------------------------- End of Body Container ------------------------- */
