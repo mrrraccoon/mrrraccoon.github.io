@@ -18,7 +18,7 @@
 
 
 body {
-    background-image: linear-gradient(to bottom right,#555555, black) /*url(/media/img/random-sky-1xJVW-CoOP0-unsplash.jpg)*/;
+    background-image: linear-gradient(to bottom right,#2a86cc, #1f1f1f) /*url(/media/img/random-sky-1xJVW-CoOP0-unsplash.jpg)*/;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -43,6 +43,10 @@ td {
 
 ul {
     list-style-type: none;
+}
+
+nav {
+    margin:0;padding: 0.09em;
 }
 
 nav > table {
