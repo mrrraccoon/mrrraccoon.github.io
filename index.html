@@ -18,34 +18,27 @@
 
 </head>
 <body>
-
-<!-- ------------------------------- Header -------------------------------- -->
-
-    <header id="top">
-    <div style="font-size: 3em; font-family: 'Unica One', cursive; text-align: center; color: white; border: 0; margin: 0;">Mr. R. Raccoon</div>
-    
+   
 <!-- ------------------------------- Nav Bar ------------------------------- -->
     <style>
-a {color: white; margin:0;}
-a:hover {color:#ffa812; text-decoration: none; }
+        a {color: white; margin:0;}
+        a:hover {color:#ffa812; text-decoration: none; }
     </style>
     <nav>
         <table>
             <tbody>
                 <tr style="color:white; font-size:x-large; font-family: 'Poiret One', cursive;">
-                                <!-- FIXME: relink top navbar with the sections for the spp, and then More... at the footer to each one. -->
                     <td><a href="/index.html">Home</a></td>
                     <td><a href="http://withoutaconclusion.blogspot.com">Blog</a></td>
-                    <td><a href="/pgs/proj.html">Projects</a></td>
-                    <td><a href="/pgs/cv.html">CV</a></td>
-                    <td><a href="/pgs/port.html">Portfolio</a></td>
+                    <td><a href="#proj">Projects</a></td>
+                    <!-- <td><a href="/pgs/cv.html">CV</a></td> -->
+                    <td><a href="#portfolio">Portfolio</a></td>
                     <td><a href="/pgs/fict.html">Fiction</a></td>
                 </tr>
             </tbody>
         </table>
     
     </nav>
-    </header>
     
 <!--
         TODO:
@@ -54,67 +47,71 @@ a:hover {color:#ffa812; text-decoration: none; }
 -->
     <main class="body-main">
 
-<!-- ------------------------------- About ------------------------------- -->
+<!-- ------------------------------- Project Cards ------------------------------- -->
 
-        <box1 id="#about" style="color: white;">
-            <div style="background-color: #696969; opacity: 0.6; ">
-                <div style="opacity: 1;  font-family: 'Unica One', cursive; font-size: 2rem; text-align: center;">About</div>
-                <div>T. Simpson is a multimedia artist residing in Houston, Texas.</div>
+        <div>
+            <img src="media/pics/IMG_3106.JPG" style="object-fit: cover; width: 100%";>
+        </div>
+
+
+        <box1 style="color: white;">
+            <div>
+                <div id="proj" style="opacity: 1;  font-family: 'Unica One', cursive; font-size: 2rem; text-align: center;">Current Projects
+                
+                    <div id="card">
+                        <div id="cardform">
+                            
+                            <h3>Climbing</h3><br>
+                            
+                            <copy id="copy">
+                                This is my latest ticklist! Something spicy something dicey!
+                            </copy><br>
+                            <cardfoot id="cfoot">More...</cardfoot>
+                        </div>
+
+
+
+                    </div>
+                    
+                    <div id="card">
+                        <div id="cardform">
+                            
+                            <h3>Writing</h3><br>
+                            
+                            <copy id="copy">
+                                With a novel and multiple collections to my name I'm currently working on two main pieces.<br>
+                                <li>The Mobia Saga</li>
+                                <li>The Bone Creek Collection</li>
+                                Two distinct genres but ones I believe I have the most fun with.
+                            </copy><br>
+                            
+                            <cardfoot id="cfoot"><a href="/pgs/fict.html">More...</a></cardfoot>
+                        
+                        </div>
+                    </div>
+
                 </div>
+            </div>
         </box1>
 
-<!--
+<!-- ------------------------------- Portfolio ------------------------------- -->
 
-        TODO:
-        Come up with something that doesn't sound mildly stupid. Not really sure what to put in this here box. Maybe a picture? Maybe a few lists and links to outside content? But why would you do that if you want to keep them onm the site, that just send them off it. That's dumb, don't do that.  No off-site links for now.
-
--->
-
-<!-- ------------------------------- Projects ------------------------------- -->
-
-        <box2 id="#projects" style="color: white;">
-            <div style="background-color: #696969; opacity: 0.6;">
-                <div>
-                <table>
-                    <thead>Web Development</thead>
-                    <tbody>
-                        <tr><td>This site.</td></tr>
-                        <tr><td>No Public Projects</td></tr>
-                    </tbody>
-                    <thead>Writing Projects</thead>
-                    <tbody>
-                        <td>Mobia Saga</td>
-                        <td>The Bone Creek Collection</td>
-                    </tbody>
-                </table>
+        <box2 id="portfolio" style="color: white;">
+            <div style="background-color: #1f1f1f;">
+                <div class="portcell">
+                    <div id="pic1"><td>pic1</td></div>
+                    <div id="pic2"><td>pic2</td></div>
+                    <div id="pic3"><td>pic3</td></div>
                 </div>
+               <a href="/pgs/port.html">More...</a>
             </div>
         </box2>
 
+<!-- ------------------------------ # ------------------------------ -->
 
-<!--
-    
-        TODO:    
-        Honestly the whole table idea needs to be  redone. Remove the web design aspect of it. That can be done in the CV page or something. Include different projects and climbing things.
-    
--->
-
-<!-- ------------------------------ CV ------------------------------ -->
-
-        <box3 id="cv" style="color: white;">
-            <div style="background-color: #696969; opacity: 0.6;">
-            <div style="font-size: 48px; font-family: 'Unica One', cursive;">Curriculum vitae</div>
-            <li>Momentum Indoor Climbing</li>
-            <li>2017-Present</li>
-
-            </div>
+        <box3 id="#" style="color: white;">
         </box3>
-<!--
 
-        TODO:
-        Like the use of the title but there's nothing really to put here. Maybe create another box for a subsection of another so as there's a need to actually scroll somewhere on the page.
-
--->
 <!-- ------------------------------ Awards ------------------------------- -->
 
         <box4 id="awards">
@@ -129,12 +126,10 @@ a:hover {color:#ffa812; text-decoration: none; }
 
         ADD: Footer section to EACH box to create a More... link to the actual page. to be able to interlink pages together.
 -->
-<!-- -------------------------- END of Main Body --------------------------- -->
-
 <!-- ------------------------------- Footer -------------------------------- -->
 
     <footer style="text-align: center; font-family: 'Poiret One', sans-serfi; color: white"><a href="#top" style="color:white;"><img class="button" src="/media/icons/up-arrow.png"
-            style="width: 20px; height: 20px;"></a>Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved<a href="#top" style="color:white;"><img class="button" src="/media/icons/up-arrow.png"
+            style="width: 20px; height: 20px;"></a> Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved <a href="#top" style="color:white;"><img class="button" src="/media/icons/up-arrow.png"
                     style="width: 20px; height: 20px;"></a></footer>
 
     <!-- ------------------------ CDN Script Injectors ------------------------ -->
@@ -150,6 +145,6 @@ a:hover {color:#ffa812; text-decoration: none; }
 <!-- ---------------------------- Google Fonts ----------------------------- -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+One&family=Unica+One&display=swap');
-    </style>
+    </!--style>
 </body>
 </html>

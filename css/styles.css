@@ -12,13 +12,13 @@
 
 * {
     padding: 0;
-    border: 1em solid transparent;
-    border-radius: 30px;
+    margin: 0;
+    border: 0;
 }
 
 
 body {
-    background-image: linear-gradient(to bottom right,#2a86cc, #1f1f1f) /*url(/media/img/random-sky-1xJVW-CoOP0-unsplash.jpg)*/;
+    background-image: linear-gradient(to bottom,#2a86cc, #1f1f1f) /*url(/media/img/random-sky-1xJVW-CoOP0-unsplash.jpg)*/;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -28,8 +28,14 @@ h1 {
     font-family: 'Unica One', cursive;
 }
 
-h2 h3 {
+h2 {
     font-family: 'Playfair Display' serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Playfair Display' serif;
+    font-size: 14px;
 }
 
 p {
@@ -75,9 +81,49 @@ nav > table {
     
 }
 
+/* --------------------------- Card Styles and Ids -------------------------- */
+
+#card {
+    height: 100%; 
+    padding: 0.5em; 
+    margin:.5em;
+}
+
+#cardform {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-row: 18px 1fr 1em; 
+    grid-gap: .5rem;
+}
+
+#cfoot {
+    position:bottom;
+    text-align:right;
+}
+
+#copy {
+    font-family: 'Poiret One', cursive;
+    font-size: .6em;
+    text-align: left;
+    color: white;
+}
+
+
+/* ------------------------ Portfolio Styles and Ids ------------------------ */
+
+.portcell > pic1 {
+    background-color: orange;
+    width:33%;
+    height: 300px;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                            Footer Styles and Ids                           */
 /* -------------------------------------------------------------------------- */
-footer { margin-left: auto; margin-right: auto;}
-/* -------------------------- End of Body Container ------------------------- */
+footer { margin-left: auto; margin-right: auto;padding:5px;}
+
+.button {
+    margin:2px
+}
+
+/* ----------------------------- End of Document ---------------------------- */
