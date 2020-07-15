@@ -18,16 +18,15 @@
 
 </head>
 <body>
-   
-<!-- ------------------------------- Nav Bar ------------------------------- -->
-    <style>
-        a {color: white; margin:0;}
-        a:hover {color:#ffa812; text-decoration: none; }
-    </style>
+
+  
+    <!-- ------------------------------- Nav Bar ------------------------------- -->
+    
     <nav>
+        
         <table>
             <tbody>
-                <tr style="color:white; font-size:x-large; font-family: 'Poiret One', cursive;">
+                <tr>
                     <td><a href="/index.html">Home</a></td>
                     <td><a href="http://withoutaconclusion.blogspot.com">Blog</a></td>
                     <td><a href="#proj">Projects</a></td>
@@ -40,112 +39,120 @@
     
     </nav>
     
-<!--
+    <!--
         TODO:
         Figure out what you have to code to call a viewport dimension change for it to collapse the nav controls into a two row three column table for ipad port.
         If possible create a hamburger menu on mobile handsets.
--->
+    -->
     <main class="body-main">
 
-<!-- ------------------------------- Project Cards ------------------------------- -->
+    <!-- ----------------------------- Cover Photo ----------------------------- -->
 
         <div>
-            <img src="media/pics/IMG_3106.JPG" style="object-fit: cover; width: 100%";>
+            <img src="media/pics/IMG_1696.jpg" style="object-fit: cover; width: 100%" ;>
         </div>
+    <!-- ------------------------------- News Cards ------------------------------- -->
 
-
-        <box1 style="color: white;">
-            <div>
-                <div id="proj" style="opacity: 1;  font-family: 'Unica One', cursive; font-size: 2rem; text-align: center;">Current Projects
-                
-                    <div id="card">
-                        <div id="cardform">
-                            
-                            <h3>Climbing</h3><br>
-                            
-                            <copy id="copy">
-                                This is my latest ticklist! Something spicy something dicey!
-                            </copy><br>
-                            <cardfoot id="cfoot">More...</cardfoot>
-                        </div>
-
-
-
-                    </div>
-                    
-                    <div id="card">
-                        <div id="cardform">
-                            
-                            <h3>Writing</h3><br>
-                            
-                            <copy id="copy">
-                                With a novel and multiple collections to my name I'm currently working on two main pieces.<br>
-                                <li>The Mobia Saga</li>
-                                <li>The Bone Creek Collection</li>
-                                Two distinct genres but ones I believe I have the most fun with.
-                            </copy><br>
-                            
-                            <cardfoot id="cfoot"><a href="/pgs/fict.html">More...</a></cardfoot>
-                        
-                        </div>
-                    </div>
-
-                </div>
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <h2>Current Projects</h2>
+                <p>This is my latest ticklist. Something spicy and something dicey!<br>
+                    <li>Currently working on a Senor Feuntes at Roger's</li>
+                    <li>Still working to gain solid footing in the 8/9 grade range and above.</li>
+                    <li>Two fiction collections: <em>The Mobia Saga</em> and <em>The Bone Creek Collection</em>.</li>
+                </p>
+                <p>With the summer heat rolling in it's become harder to work outside problems, so I've stayed in for the most part and continued to work inside grades. Only time will tell if I succeed. Fingers crossed.</p>
             </div>
-        </box1>
-
-<!-- ------------------------------- Portfolio ------------------------------- -->
-<!--TODO:   Finish out portfolio cards and the full layout of various widths on the port page.
--->
-        <box2 id="portfolio" style="color: white;">
-            <div style="background-color: #1f1f1f;">
-                <div class="portcell">
-                    <div id="pic1"><td>pic1</td></div>
-                    <div id="pic2"><td>pic2</td></div>
-                    <div id="pic3"><td>pic3</td></div>
-                </div>
-               <a href="/pgs/port.html">More...</a>
+        </div>    
+        <div class="column">
+            <div class="content">
+                <h2>Fiction</h2>
+                <p>What am I doing and where is it going? Who knows! I know I don't, just kidding... Or am I?</p>
+                <p><a href="/pgs/fict.html" style="font-size: 1em;">More...</a></p>
             </div>
-        </box2>
-
-<!-- ------------------------------ # ------------------------------ -->
-
-        <box3 id="#" style="color: white;">
-        </box3>
-
-<!-- ------------------------------ # ------------------------------- -->
-
-        <box4 id="awards">
-            <div style="background-color: #696969; opacity: 0.6;">
+        </div>
+        <div class="column">
+            <div class="content">
+                <h2>WebDev</h2>
+                <p>What I'm doing and why. Clue: A whole lot of nothing. Just check the blog. I've got witnesses.</p>
+                <p><a href="/pgs/fict.html" style="font-size: 1em;">More...</a></p>
             </div>
-        </box4>
-    </main>
-<!--
+        </div>
+    
+    </div>
 
-        TODO:
-        Revamp the whole section. Awards is no longer a linked section. Expand into a Portfolio preview or something. 
+    <!-- ------------------------------- Portfolio ------------------------------- -->
 
-        ADD: Footer section to EACH box to create a More... link to the actual page. to be able to interlink pages together.
--->
-<!-- ------------------------------- Footer -------------------------------- -->
+    <box2 id="portfolio" style="color: white; text-align:center; background-color: #085687;"><h1>Curated Portfolio</h1>
+    </box2>
+    <style> /* Portfolio Styles */
+        .row {margin:0;}
+        .column {float:left;width:33%;}
+        .row:after {content:"";display:table;clear:both;}
+        .content {padding: 10px;}
+        h3 {font-family: 'Unica One', cursive;}
+    </style>
 
-    <footer style="text-align: center; font-family: 'Poiret One', sans-serfi; color: white"><a href="#top" style="color:white;"><img class="button" src="/media/icons/up-arrow.png"
-            style="width: 20px; height: 20px;"></a> Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved <a href="#top" style="color:white;"><img class="button" src="/media/icons/up-arrow.png"
-                    style="width: 20px; height: 20px;"></a></footer>
+    <!-- -------------------------- Portfolio Content -------------------------- -->
 
-    <!-- ------------------------ CDN Script Injectors ------------------------ -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-<!-- ---------------------------- Google Fonts ----------------------------- -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+One&family=Unica+One&display=swap');
-    </!--style>
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <img src="/media/pics/port/gallery_books__mount_vernon.jpg" alt="Gallery Books, Mount Vernon" style="width: 100%;">
+                <h3>Gallery Books, Mount Vernon</h3>
+                <p>I'm particularly proud of this image. Aside from coating the film and the photographic paper, I made this    image from
+                scratch. I hand wound the film into the canister, set all the lighting, took this single image, took the film   back,
+                developed it by hand in a dark room, printed the negative by hand and edited the print by hand. This is a   digital scan
+                of the original hand printed negative.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="/media/pics/port/roadside__2005.jpg" alt="Roadside" style="width: 100%;">
+                <h3>Roadside</h3>
+                <p>Time marches on. Last I saw that location the tree was cut down and the cross gone. And so their memory  grew dimmer.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="/media/pics/port/gone.jpg" alt="Gone" style="width: 100%;">
+                <h3>Gone</h3>
+                <p>They say even with the worst tools the artist will prevail. Old headstone found in a creek bed in Mount
+                    Pleasant, Texas.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------- Footer -------------------------------- -->
+
+        <footer>
+            <a href="#top"  style="color:white;">
+                <img class="button" src="/media/icons/up-arrow.png" style="width: 20px; height: 20px;">
+            </a> 
+            
+            Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved
+            
+            <a href="#top" style="color:white;">
+                <img class="button" src="/media/icons/up-arrow.png" style="width: 20px; height: 20px;">
+            </a>
+        </footer>
+
+        <!-- ------------------------ CDN Script Injectors ------------------------ -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        
+        <!-- ---------------------------- Google Fonts ----------------------------- -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poire+One&    family=Unica+One&  display=swap');
+        </style>
 </body>
 </html>
