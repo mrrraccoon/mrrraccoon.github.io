@@ -21,13 +21,14 @@ h1 {
 h2 {
     font-family: 'Unica One';
     text-align: center;
-    font-size: 50vw;
+    font-size: Auto;
     color: white;
 }
 
 h3 {
-    font-family: 'Gilda Display' serif;
-    font-size: .8em;
+    font-family: 'Poiret One' serif;
+    font-size: medium;
+    color: white;
 }
 
 ul {
@@ -46,12 +47,17 @@ li {
     list-style-type: none;   
 } 
 
+.li1 {
+    text-indent: 2em;
+}
+
 p {
     font-family: 'Poiret One', sans-serif;
     color: white;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.25rem;
     list-style-type: none;
+    text-indent: 2em;
 }
 
 tr {
@@ -83,7 +89,7 @@ footer {
     height:300px;
     margin-left: auto; 
     margin-right: auto;
-    padding:5px;
+    padding:2em;
 }
 
 .button {
