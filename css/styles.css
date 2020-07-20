@@ -4,6 +4,7 @@
     font-family: 'Gilda Display', serif;
     font-family: 'Poiret One', cursive;
     font-family: 'Unica One', cursive;
+    font-family: 'Roboto' sans-serif;
 }
 
 * {
@@ -26,7 +27,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Poiret One' serif;
+    font-family: sans-serif;
     font-size: medium;
     color: white;
 }
@@ -40,7 +41,7 @@ ul {
 } 
 
 li {
-    font-family: 'Poiret One', sans-serif;
+    font-family: sans-serif;
     color: white;
     text-align: justify;
     font-size: 1rem;
@@ -52,7 +53,7 @@ li {
 }
 
 p {
-    font-family: 'Poiret One', sans-serif;
+    font-family: 'Roboto',sans-serif;
     color: white;
     text-align: justify;
     font-size: 1.25rem;
