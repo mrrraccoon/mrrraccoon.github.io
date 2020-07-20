@@ -17,13 +17,14 @@
 h1 {
     font-family: 'Gilda Display', sans-serif; 
     font-size: 5vw;
+    
 }
 
 h2 {
     font-family: 'Unica One';
     text-align: center;
     font-size: Auto;
-    color: white;
+    color:#ffa812;
 }
 
 h3 {
@@ -33,7 +34,7 @@ h3 {
 }
 
 ul {
-    font-family: 'Poiret One', sans-serif;
+    font-family: sans-serif;
     color: white;
     text-align: justify;
     font-size: 1rem;
@@ -56,7 +57,7 @@ p {
     font-family: 'Roboto',sans-serif;
     color: white;
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1rem;
     list-style-type: none;
     text-indent: 2em;
 }
@@ -87,7 +88,7 @@ footer {
     text-align:center; 
     font-family: 'Poiret One', sans-serif; 
     color: white; 
-    height:300px;
+    height:0;
     margin-left: auto; 
     margin-right: auto;
     padding:2em;
@@ -96,11 +97,11 @@ footer {
 .button {
     margin:2px
 }
-
+/*
 .row {
     background-color: #085687;
 }
-
+*/
 .column {
     border: 5px;
 }
