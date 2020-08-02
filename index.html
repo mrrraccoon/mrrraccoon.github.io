@@ -37,7 +37,7 @@
             font-size: 48px;}
         
         a:hover {
-            color:#ffa812; 
+            color:#6c94b9; 
             text-decoration: none; 
         }
     </style>
@@ -48,7 +48,6 @@
                 <tr>
                     <td><a href="http://withoutaconclusion.blogspot.com">Blog</a></td>
                     <td><a href="#proj">Projects</a></td>
-                    <!-- <td><a href="/pgs/cv.html">CV</a></td> -->
                     <td><a href="#photos">Photos</a></td>
                     <td><a href="/pgs/fict.html">Fiction</a></td>
                 </tr>
@@ -65,14 +64,14 @@
     <!-- ----------------------------- Cover Photo ----------------------------- -->
 
         <div>
-            <img src="media/pics/IMG_1696.jpg" style="object-fit: cover; width: 100%";>
+            <img src="media/IMG_1696.jpg" style="object-fit: cover; width: 100%";>
         </div>
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                               News Cards                                -->
     <!-- ----------------------------------------------------------------------- -->
 
-    <div class="row">
+<div class="card_grid">
         
         <div class="column">
             <div class="content">
@@ -129,104 +128,46 @@
     <!--                                Portfolio                                -->
     <!-- ----------------------------------------------------------------------- -->
 
-    <h2  id="photos" style="font-family: 'Poiret One', serif; font-size: 5em;">Photos</h2>
+        <div id="photos" class="box_title">Photos</div>
+        
+<div class="photo_grid">
+        
+            <!--<div class="box"><img class="img1" src="/media/caterpillars.jpg"></div>-->
+            <div class="box"><img class="img1" src="/media/gallery_books__mount_vernon.jpg"></div>
+            <!--<div class="box"><img class="img1" src="/media/gone.jpg"></div>
+            <div class="box"><img class="img1" src="/media/long_exposure_no__1.jpg"></div>
+            <div class="box"><img class="img2" src="/media/james_henderson.jpg"></div>
+            <div class="box"><img class="img2" src="/media/long_exposure_branch_in_water.jpg"></div>
+            <div class="box"><img class="img2" src="/media/metal_box__pond.jpg"></div>-->
+            <div class="box"><img class="img2" src="/media/mono_chrysanthemum.jpg"></div>
+            <!--<div class="box"><img class="img1" src="/media/rail_yard__2005.jpg"></div>-->
+            <div class="box"><img class="img1" src="/media/white_flowers.jpg"></<div>
+            <!--<div class="box"><img class="img2" src="/media/roadside__2005.jpg"></div>
+            <div class="box"><img class="img2" src="/media/stainglass_window__franklin_co.jpg"></div>
+           <!--<div class="box"><img class="img2" src="/media/trapped_in_winter.jpg"></div>-->
 
-    <!-- -------------------------- Portfolio Styles --------------------------- -->
-
-    <style>
-        .row {margin:0;}
-        .column {float:left;width:33%;}
-        .row:after {content:"";display:table;clear:both;}
-        .content {padding: 10px;}
-    </style>
-
-    <!-- -------------------------- Portfolio Content -------------------------- -->
-    <!--
-        TODO: Fill out the rest of the portfolio with images and captions
-
-    -->
-    <!--<div class="row">-->
-
-        <!-- ------------------------------ Column 1 ------------------------------- -->
-
-        <div class="column"> <!-- Horizontal oriented photo -->
             
-            <div class="content">
-                <img src="/media/pics/port/gallery_books__mount_vernon.jpg" alt="Gallery Books, Mount Vernon" style="width: 100%;">
-                <h3>Gallery Books, Mount Vernon</h3>
-                <p>I'm particularly proud of this image. Aside from pre-coated emulsions, I made this image from scratch. This is a digital scan of the original hand printed negative.</p>
-            </div>
-
-            <div class="content">
-                <img src="/media/pics/port/metal_box__pond.jpg" alt="Metal Box, Pond" style="width: 100%;">
-                <h3>Metal Box, Pond</h3>
-                <p>I never knew what this box had in it, or what it did, or was for. It remained a mystery even to this day. </p>
-            </div>
-        </div>
-
-        <!-- ------------------------------ Column 2 ------------------------------- -->
-
-        <div class="column"> <!-- Vertical oriented photo -->
-            <div class="content">
-                <img src="/media/pics/port/roadside__2005.jpg" alt="Roadside" style="width: 100%;">
-                <h3>Roadside, 2005</h3>
-                <p>Time marches on. Last I saw that location the tree was cut down and the cross gone. And so their memory  grew dimmer.</p>
-            </div>
-
-            <div class="content">
-                <img src="/media/pics/port/long_exposure_no__1.jpg" alt="Long Exposure No. 1" style="width: 100%;">
-                <h3>Long Exposure No. 1</h3>
-                <p>I've always been fascinated with time in relation to light. </p>
-            </div>
-
-        </div>
-
-        <!-- ------------------------------ Column 3 ------------------------------- -->
-
-        <div class="column">
-            <div class="content"> <!-- Horizontal oriented photo -->
-                <img src="/media/pics/port/gone.jpg" alt="Gone" style="width: 100%;">
-                <h3>Gone</h3>
-                <p>They say even with the worst tools the artist will prevail. Old headstone found in a creek bed in Mount
-                    Pleasant, Texas.</p>
-            </div>
-        
-            <!-- Vertical oriented photo -->
-            <div class="content">
-                <img src="/media/pics/port/stainglass_window__franklin_co.jpg" alt="Stainglass Window, Frainklin Co." style="width: 100%;">
-                <h3>Stainglass Window, Franklin Co.</h3>
-                <p>A beautiful stainglass window found just inside a bell tower in a small town in Franklin Co.</p>
-            </div>
-        
-        </div>
-
-
-
-        </div>
-    
-    </div>
-
-
+</div>
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 Footer                                  -->
     <!-- ----------------------------------------------------------------------- -->
 
-        <footer>
+<div class="footer">
             <a href="#top"  style="color:white;">
                 <img class="button" src="/media/icons/up-arrow.png" style="width: 20px; height: 20px; background-color: transparent;">
             </a>
-            Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved
+            <p>Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved</p>
             
             <a href="#top" style="color:white;">
                 <img class="button" src="/media/icons/up-arrow.png" style="width: 20px; height: 20px; background-color: transparent">
             </a>
-        </footer>
+</div>
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                            END OF DISPLAYED                             -->
     <!-- ----------------------------------------------------------------------- -->
 
-        <!-- ------------------------ CDN Script Injectors ------------------------ -->
+        <!-- ------------------------ CDN Script Injectors ------------------------
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>
@@ -236,7 +177,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-        
+         -->
         <!-- ---------------------------- Google Fonts ----------------------------- -->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poire+One&family=Unica+One&family=Roboto&familydisplay=swap');
