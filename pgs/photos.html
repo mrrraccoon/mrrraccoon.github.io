@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T. Simpson's Photography</title>
+</head>
+<body>
+    <style>
+
+        body {
+            background-color: #055887;
+        }
+
+        .img1{
+            width: 100%;
+            height:100%;
+            overflow: hidden;
+        }
+
+        .img2{
+            width: auto;
+            height:100%;
+            overflow: hidden;
+        }
+
+        .photo_grid {
+            display:grid;
+            margin: 0;
+            padding-left: auto;
+            padding-right: auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: auto;
+            grid-gap:1em;
+            
+        }
+
+        .box1{
+            grid-column: 1/2;
+            grid-row: auto;
+        }
+
+        .box2{
+            grid-column: 2/3;
+            grid-row: auto;
+        }
+
+    </style>
+    
+    <div class="photo_grid">
+    
+        <div class="box1"><img class="img1" src="/media/caterpillars.jpg"></div>
+        <div class="box2"><img class="img1" src="/media/gallery_books__mount_vernon.jpg"></div>
+        <div class="box3"><img class="img1" src="/media/gone.jpg"></div>
+
+        <!--<div class="box5"><img class="img2" src="/media/james_henderson.jpg"></div>-->
+        <div class="box6"><img class="img2" src="/media/long_exposure_branch_in_water.jpg"></div>
+        
+        <div class="box7"><img class="img2" src="/media/metal_box__pond.jpg"></div>
+        <div class="box8"><img class="img2" src="/media/mono_chrysanthemum.jpg"></div>
+        <div class="box9"><img class="img1" src="/media/rail_yard__2005.jpg"></div>
+        <div class="box4"><img class="img1" src="/media/long_exposure_no__1.jpg"></div>
+        <div class="box10"><img class="img1" src="/media/white_flowers.jpg"></<div>
+
+    
+    
+    </div>
+
+</body>
+</html>
