@@ -6,7 +6,8 @@ body {
 }
 
 .nav {
-    background-color: #237297;
+    background: linear-gradient(#237297, #ffffff,#237297);
+    color: #000;
     text-align: right;
 }
 
@@ -17,11 +18,10 @@ body {
     font-family: 'Times New Roman', Times, serif; 
     font-size: 48px; 
     text-align: center; 
-    width: 100%; 
+    width: 1fr; 
     margin: 0; 
     padding-top:50px;
     height: 150px;
-    vertical-align: middle;
 }
 
 .content {
@@ -29,7 +29,7 @@ body {
     display: grid;
     padding: 2rem;
     width: 1fr;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 1fr;
     grid-template-rows: auto;
     grid-gap: 5em;
     text-align: justify;
@@ -43,19 +43,20 @@ body {
 }
 
 .columnRight {
-    width:100%;
+    width: 100%;
     height: 100%;
     grid-column: 2;
     grid-row: auto;
 }
 
 .columnPhoto {
-    width: 100%;
-    grid-column: 2/3;
+    width: 1fr;
+    grid-column: 2;
     grid-row: auto;
 }
 
 p {
+    width:100%;
     line-height: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 3ch;
@@ -73,7 +74,7 @@ h2 {
 
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border: black solid 2px;
     overflow: hidden;
 }
