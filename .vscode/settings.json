@@ -9,7 +9,8 @@
         "Mobia",
         "ipad",
         "scrollbar",
-        "stainglass"
+        "stainglass",
+        "stylesheet"
     ],
     "liveServer.settings.port": 5501
 }

@@ -1,7 +1,8 @@
+/* This stylesheet control how individual sheets look and is subservient to the fic.css file */
 html {
     margin:0;
     padding:0;
-    background-color: tan;
+    background-color: #ffffff;
 }
 
 img {
