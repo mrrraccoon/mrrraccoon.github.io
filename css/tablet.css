@@ -1,0 +1,159 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Root Styles                                */
+/* -------------------------------------------------------------------------- */
+
+:root {
+    width: 100%;
+    height: 100%;
+    font-family: 'Gilda Display', serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Unica One', cursive;
+    font-family: 'Roboto' sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Universal Tag Styles                            */
+/* -------------------------------------------------------------------------- */
+
+* {
+    background-color: #055887;
+    scrollbar-width: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1 {
+    font-family: 'Gilda Display', sans-serif; 
+    font-size: 5vw;
+    text-shadow: 3px 3px 3px #000000 ;
+}
+
+h2 {
+    font-family: 'Poiret One';
+    text-align: center;
+    font-size: 64px;
+    color:#ffffff;
+    text-shadow: 3px 3px 3px #000000 ;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+ul {
+    font-family: sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 1rem;
+    list-style-type: none;   
+} 
+
+li {
+    font-family: 'Roboto',sans-serif;
+    color: #f5cc9f;
+    text-align: justify;
+    font-size: 1rem;
+    list-style-type: none;   
+} 
+
+p {
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 1rem;
+    list-style-type: none;
+    text-indent: 2em;
+}
+
+tr {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1vh;
+}
+
+td {
+    padding: auto;
+    font-size: 1vw;
+    text-shadow: 3px 3px 3px #000000 ;
+}
+
+nav {
+    margin:0;
+    padding: 0.05em;
+}
+
+nav > table {
+    margin-left: auto;
+    /*margin-right:auto;*/
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: (1fr);
+    text-align:center; 
+    font-family: 'Poiret One', sans-serif; 
+    color: white; 
+    height:0;
+    margin-left: auto; 
+    margin-right: auto;
+    padding:2em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             Class and Id Styles                            */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------- Grab-Bag Class Styles ------------------------- */
+
+.li1 {
+    text-indent: 2em;
+    line-height: 2.5em;
+}
+
+.button {
+    margin:2px
+}
+
+.column {
+    padding: 0;
+}
+
+.row:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.content {
+    line-height: 2em;
+}
+
+.cover_photo {
+    object-fit: cover; 
+    width: 100%;
+}
+/* -------------------------------------------------------------------------- */
+/*                    Portfolio Body Grid Classes                             */
+/* -------------------------------------------------------------------------- */
+
+.img1 { /* Horizontal Images */
+    box-shadow: 3px 3px 8px black; 
+    height: auto;
+    background-color: transparent;
+
+}
+
+.img2 { /* Vertical Images */
+    box-shadow: 3px 3px 8px black; 
+    width: auto;
+    background-color: transparent;
+}
+
+.card_grid { /* Card Grid Controls*/
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+}
