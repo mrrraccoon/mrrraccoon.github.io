@@ -9,14 +9,25 @@
     
     <link rel="shortcut icon" href="http://example.com/favicon.ico">
     
-    <title>T Simpson </title>    
-    
-    <!-- External Stylesheet -->
+    <title>T Simpson | Does Things </title>    
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                      External Viewport Stylesheets                      -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- Desktop and Main Stylesheet -->
     <link rel="stylesheet" href="/css/styles.css">
 
-    <!-- iPad viewport Reference -->
-    <link rel="stylesheet" media="screen and (min-device-width: 768px)" href="/css/tablet.css">
+    <!-- Tablet viewport Reference -->
+    <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="/css/tablet.css">
     
+    <!-- Phone Handset viewport Reference -->
+    <link rel="stylesheet" media="screen and (max-device-width: 420px)" href="/css/handset.css">
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--     All Other External Stylesheets or Frameworks or Link References     -->
+    <!-- ----------------------------------------------------------------------- -->
+
     <!-- Bootstrap Framework -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -25,6 +36,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poiret+One&family=Unica+One&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
 
   
@@ -61,24 +73,37 @@
         </nav>
     
         <!--
-        TODO:
-        Figure out what you have to code to call a viewport dimension change for it to collapse the nav controls into a two row three column table for ipad port.
-        If possible create a hamburger menu on mobile handsets. Think about viewport sizing
+        TODO: Import js script to collapse the navbar at viewport sizes (768px, 360px).
+        TODO: Rewrite Navbar into grid.
     
         -->
     <!-- ----------------------------- Cover Photo ----------------------------- -->
 
+    <!-- 
+    <source media="(max-width: 768px)" srcset="BigImage.png">
+    <source media="(max-width: 420px)" srcset="MediumImage.png">
+    <img src="OtherImage.png" alt="IfItDoesntMatchAnyMedia">
+
+    Another more streamline refactor is: 
+    
+    <img src="small.jpg" srcset="medium.jpg 1000w, large.jpg 2000w" alt="yah">
+
+    The code speaks for itself. CSS not required.
+    -->
+        
         <div>
-           <img class="cover_photo" src="media/IMG_1696.jpg">
+           <img class="cover_photo" src="media/IMG_1696.jpg"> <!-- Corpus Christi Marina Image -->
         </div>
 
+
+        <!-- TODO: Decide which images to put for which viewport. -->
     <!-- ----------------------------------------------------------------------- -->
     <!--                               News Cards                                -->
     <!-- ----------------------------------------------------------------------- -->
-
+        <!-- TODO: Create column class for both tablet and handset CSS -->
         <div class="card_grid">
 
-                <div class="column">
+                <div class="column1">
                     <div class="content">
                         <h2>About</h2>
                         <p>
@@ -88,7 +113,7 @@
                     </div>
                 </div> 
             
-                <div class="column">
+                <div class="column1">
 
                     <div id="proj" class="content">
                         <h2>Current Projects</h2>
@@ -111,12 +136,14 @@
                     </div>
                 </div>
 
-                <div class="column">
+                <div class="column1">
                     <div class="content">
-                        <h2>Web Development</h2>
-                        <p>WebDev is a little weird for me.<br><p>I grew up a little before it all took off and had a class in the early days of the Internet.      Think Dogpile and Lycos search engines. <br><p>Post 9/11 I dabbled in graphic design for web but that fell off too. Picked up a few     projects in college as diverse as an iPad icon set, to a full front-end overhaul of a medical site. COVID gave me time to sit down and     really focus on what has changed and improved and boy is it a lot.<br>
-                        <p>I'm currently in the process of working through an 54hr course load for full-stack development. This site will improve and       streamline over time. Enjoy the hideous design choices to come.</p>
-                        <p></p>
+                        <h2>Fiction</h2>
+                        <p>Thousands of trees have lost their lives needlessly for me.<br>
+                        <p>Or at least you'd believe it had you known me at the time I first started writing. So, so many years ago all thanks to MTv and Billy Corgan. More specifically the <em>Mellon Collie and the Infinite Sadness</em> album.<br>
+                        <p>There was just something about hearing it on MTv late in 1995 that opened the magical box. I clearly remember sitting in Social Studies and ripping off <em>Bullet With Butterfly Wings</em>. Oh what trash ensued.<br>
+                        <p>Hopefully the things you read here will be marginally better than that.<br></p>
+                        <p><a href="pgs/fict.html" style="font-size: 1rem;">Read more!</a></p>
                     </div>
                 </div>
             
