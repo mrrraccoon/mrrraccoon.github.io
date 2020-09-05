@@ -86,7 +86,7 @@ nav {
 
 nav > table {
     margin-left: auto;
-    /*margin-right:auto;*/
+    margin-right:auto;
 }
 
 .footer {
@@ -117,6 +117,14 @@ nav > table {
 }
 
 .column1 {
+    padding: 1em;
+}
+
+.column2 {
+    padding: 1em;
+}
+
+.column3 {
     padding: 1em;
 }
 
@@ -153,7 +161,8 @@ nav > table {
 
 .card_grid { /* Card Grid Controls*/
     display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100% 1fr 1fr;
     padding: 2rem;
 }
