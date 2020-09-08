@@ -23,6 +23,15 @@
     border: 0;
 }
 
+h3 {
+    font-family: 'Roboto' sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                              Specialized Tags                              */
 /* -------------------------------------------------------------------------- */
@@ -30,11 +39,11 @@
 .projectBox {
     background-color: white;
     border: 5px solid lightgrey;
-    width: 500px;
+    width: 100%;
     height: 100%;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
+.whiteSpace {
+    width: 100%;
+    height: 50px;
 }
