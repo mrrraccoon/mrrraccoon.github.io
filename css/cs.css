@@ -19,12 +19,13 @@
     background-color: #055887;
     scrollbar-width: none;
     padding: 0;
+    padding-left: .5rem;
     margin: 0;
     border: 0;
 }
 
 h3 {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -32,6 +33,23 @@ p {
     font-size: medium;
 }
 
+button {
+    background-color: white;
+    border-radius: 30px;
+    border: black;
+    border-width: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+
+em {
+    background-color: inherit;
+}
+
+.whiteSpace50 {
+    width: 100%;
+    height: 50px;
+}
 /* -------------------------------------------------------------------------- */
 /*                              Specialized Tags                              */
 /* -------------------------------------------------------------------------- */
@@ -39,11 +57,19 @@ p {
 .projectBox {
     background-color: white;
     border: 5px solid lightgrey;
-    width: 100%;
+    width: 95%;
     height: 100%;
 }
 
-.whiteSpace {
-    width: 100%;
-    height: 50px;
+.projectBox h3 {
+    background-color: inherit;
+    padding: 1em;
 }
+
+.projectBox p {
+    background-color: inherit;
+    padding: inherit;
+
+}
+
+
