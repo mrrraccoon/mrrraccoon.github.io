@@ -1,0 +1,17 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Main Styles                                */
+/* -------------------------------------------------------------------------- */
+
+body {
+    background: whitesmoke;
+}
+
+/* --------------------------- Main Section Class --------------------------- */
+
+.comments p:nth-child(even) {
+    background: lavender
+}
+
+.comments p:nth-child(odd) { 
+    background: gainsboro;
+}
