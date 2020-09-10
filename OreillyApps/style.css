@@ -8,6 +8,15 @@ body {
 
 /* --------------------------- Main Section Class --------------------------- */
 
+.comment-input {
+    float: left;
+    width: 50%;
+}
+.comments {
+    float: right;
+    width: 50%;
+    text-align: left
+}
 .comments p:nth-child(even) {
     background: lavender
 }

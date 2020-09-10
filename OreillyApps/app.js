@@ -1,14 +1,11 @@
 var main = function () {
-    "use strict"; // This allow for the js to be more flexible.
+    "use strict";
 
     $(".comment-input button").on("click", function (event) {
-        var $new_comment = $("<p>"),
-        comment_text = $(".comment-input input").val();
-
-        $new_comment.text(comment_text);
-
-        $(".comments").append($new_comment);
+        var 
+        $(".comments").append("<p>this is a new comment</p>");
     });
 };
 
-$(document).ready(main); //DOM call: Document > Main
+$(document).ready(main);
+
