@@ -3,18 +3,18 @@
 /* -------------------------------------------------------------------------- */
 
 body {
-    background: whitesmoke;
+    background: lightslategrey;
 }
 
 /* --------------------------- Main Section Class --------------------------- */
 
 .comment-input {
     float: left;
-    width: 50%;
+    width: 25%;
 }
 .comments {
-    float: right;
-    width: 50%;
+    float: left;
+    width: 75%;
     text-align: left
 }
 .comments p:nth-child(even) {
