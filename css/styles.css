@@ -79,14 +79,14 @@ td {
     text-shadow: 3px 3px 3px #000000 ;
 }
 
-nav {
+#nav {
+    display:flex;
+    flex-direction: row;
+    align-items: left;
     margin:0;
     padding: 0.05em;
-}
-
-nav > table {
-    margin-left: auto;
-    /*margin-right:auto;*/
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1vh;
 }
 
 .footer {

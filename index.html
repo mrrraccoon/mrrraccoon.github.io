@@ -44,7 +44,7 @@
     <!--                                 Nav Bar                                 -->
     <!-- ----------------------------------------------------------------------- -->
 
-        <style>
+        <style>/* link attributes for nav bar.*/
         a {
             font-family: '', ;
             color: white; 
@@ -58,46 +58,34 @@
         }
         </style>
         <nav>
+
+            <div id="nav">
+            <a href="http://withoutaconclusion.blogspot.com">Blog</a>
+            <a href="#proj">Projects</a>
+            <a href="/pgs/photos.html">Photos</a>
+            <a href="/pgs/fict.html">Fiction</a>
+            </div>
         
-        <table>
-            <tbody>
-                <tr>
-                    <td><a href="http://withoutaconclusion.blogspot.com">Blog</a></td>
-                    <td><a href="#proj">Projects</a></td>
-                    <td><a href="/pgs/photos.html">Photos</a></td>
-                    <td><a href="/pgs/fict.html">Fiction</a></td>
-                </tr>
-            </tbody>
-        </table>
-    
         </nav>
     
         <!--
         TODO: Import js script to collapse the navbar at viewport sizes (768px, 360px).
         TODO: Rewrite Navbar into grid.
         TODO: Write Comp Sci main page.
-    
+        TODO: Decide which images to put for which viewport.
+        TODO: Create column class for both tablet and handset CSS
         -->
     <!-- ----------------------------- Cover Photo ----------------------------- -->
 
-    <!--
-        A more streamline refactor: 
-    
-        <img src="small.jpg" srcset="medium.jpg 1000w, media.IMG_1619.jpg 2000w alt="Cover Images">
-
-        The code speaks for itself. CSS not required.
-    
-    -->
-
         <div>
-           <img class="cover_photo" src="media/IMG_1696.jpg"> <!-- Corpus Christi Marina Image--> 
+           <img class="cover_photo" src="media/IMG_1696.jpg" alt="Large image of Corpus Christi Marina"> <!-- Corpus Christi Marina Image--> 
         </div>
-        <!-- TODO: Decide which images to put for which viewport. -->
+
+
     <!-- ----------------------------------------------------------------------- -->
-    <!--                               News Cards                                -->
+    <!--                               Card Grid                                -->
     <!-- ----------------------------------------------------------------------- -->
         
-        <!-- TODO: Create column class for both tablet and handset CSS -->
         <div class="card_grid">
 
                 <div class="column1">
@@ -160,5 +148,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+Onefamily=Unica+One&family=Roboto&familydisplay=swap');
     </style>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
