@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav" id="myNav">
+        <a href="#home" class="active">Home</a> <!-- active class highlights the home button. -->
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!--  Supposedly this provides the switch to change to a compact navbar.-->
+        <i class="fas fa-bars"></i>
+        </a>
+    </div>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                 w3school coding example code ends here                  -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <!-- ----------------- S&G (shits and giggles)code below. ------------------ -->
+
+    <main>
+        <div class="text_input">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt cumque accusantium laudantium quisquam eius ex assumenda incidunt, iure facere dolor! Perspiciatis, sapiente libero! Cum aut, aliquid facere illum, vitae totam tempora fugit quod repellat soluta ducimus, impedit nam odio eum.</div>
+    </main>
+    <script src="script.js"></script>          
+</body>
+</html>
