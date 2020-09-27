@@ -57,26 +57,23 @@
             text-decoration: none; 
         }
         </style>
-        <nav>
-        
-        <table>
-            <tbody>
-                <tr>
-                    <td><a href="http://withoutaconclusion.blogspot.com">Blog</a></td>
-                    <td><a href="#proj">Projects</a></td>
-                    <td><a href="/pgs/photos.html">Photos</a></td>
-                    <td><a href="/pgs/fict.html">Fiction</a></td>
-                </tr>
-            </tbody>
-        </table>
+
+            <div class="nav" id="myNav">
+                <a href="#home" class="active">Home</a> <!-- The active class highlights the home button for the user.  -->
+                <a href="http://withoutaconclusion.blogspot.com">Blog</a></td>
+                <a href="#proj">Projects</a></td>
+                <a href="/pgs/photos.html">Photos</a></td>
+                <a href="/pgs/fict.html">Fiction</a></td>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars"></i> <!--  Font Awesome icon solid pack icon-->
+                </a>
+            </div>
     
-        </nav>
     
         <!--
-        TODO: Import js script to collapse the navbar at viewport sizes (768px, 360px).
-        TODO: Rewrite Navbar into grid.
+
         TODO: Write Comp Sci main page.
-    
+
         -->
     <!-- ----------------------------- Cover Photo ----------------------------- -->
 
@@ -116,7 +113,7 @@
                             <li>Senor Fuerte, v7</li> 
                             <div class="li1">Roger's Park, Belton, Texas</div>
                             <div class="li1">So why this piece? I just like where it goes. It's not on my particularly favorite type of hold, pockets, but it's something to work out when I need a focus. One of the hardest things I've experienced as a climber is focusing on hard problems to really understand them and thus expand my strategies.</div>
-                            <li>Comfortably send v8/v9 range</li>
+                            <li>Comfortably send v9/v10 range</li>
                             <div class="li1">I'm more an indoor climber as it allows me access all year.</div>
                         </ul>
                         <hr>
@@ -157,5 +154,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+Onefamily=Unica+One&family=Roboto&familydisplay=swap');
     </style>
+    <script src="Responsive Code/index.js"></script>
 </body>
 </html>

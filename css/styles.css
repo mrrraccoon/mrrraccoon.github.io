@@ -11,6 +11,37 @@
     font-family: 'Roboto' sans-serif;
 }
 
+/* ----------------------------- End Root Styles ---------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                     @Mmedia calls for Responsive Design                    */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width:768px) {
+    .nav a:not(:first-child) {display:none;}
+    .nav a:icon {
+        float:right;
+        display:block;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nav.responsive {position:relative;}
+    .nav.responsive a.icon {
+        position:adsolute;
+        right:0;
+        top:0;
+    }
+    .nav.responsive a {
+        float:none;
+        display:block;
+        text-align: left;
+    }
+}
+
+/* --------------------------- End of @media calls -------------------------- */
+
+
 /* -------------------------------------------------------------------------- */
 /*                            Universal Tag Styles                            */
 /* -------------------------------------------------------------------------- */
@@ -68,26 +99,73 @@ p {
     text-indent: 2em;
 }
 
-tr {
-    font-family: 'Poiret One', sans-serif;
-    font-size: 1vh;
+/*    text-shadow: 3px 3px 3px #000000 ;*/
+
+/* ------------------------- End Universal Grab-bag ------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/*                          Responsive NavBar Styles                          */
+/* -------------------------------------------------------------------------- */
+
+.nav {
+    background-color: #055887;
+    overflow: hidden;
 }
 
-td {
-    padding: auto;
-    font-size: 1vw;
-    text-shadow: 3px 3px 3px #000000 ;
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-nav {
-    margin:0;
-    padding: 0.05em;
+.nav a:hover {
+    color: #f5cc9f;
+    /*color: white;*/
 }
 
-nav > table {
-    margin-left: auto;
-    /*margin-right:auto;*/
+/*.nav a.active {
+    border: #f5cc9f;
+    color: white;
+}*/
+
+.nav .icon {
+    display: none;
 }
+
+/* ---------------------- End Responsive NavBar Styles ---------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                    Portfolio Body Grid Classes                             */
+/* -------------------------------------------------------------------------- */
+
+.img1 { /* Horizontal Images */
+    box-shadow: 3px 3px 8px black; 
+    height: auto;
+    background-color: transparent;
+
+}
+
+.img2 { /* Vertical Images */
+    box-shadow: 3px 3px 8px black; 
+    width: auto;
+    background-color: transparent;
+}
+
+.card_grid { /* Card Grid Controls*/
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Footer Styles                               */
+/* -------------------------------------------------------------------------- */
 
 .footer {
     display: grid;
@@ -100,6 +178,9 @@ nav > table {
     margin-right: auto;
     padding:2em;
 }
+
+/* ---------------------------- End Footer Styles --------------------------- */
+
 
 /* -------------------------------------------------------------------------- */
 /*                             Class and Id Styles                            */
@@ -133,27 +214,4 @@ nav > table {
 .cover_photo {
     object-fit: cover; 
     width: 100%;
-}
-/* -------------------------------------------------------------------------- */
-/*                    Portfolio Body Grid Classes                             */
-/* -------------------------------------------------------------------------- */
-
-.img1 { /* Horizontal Images */
-    box-shadow: 3px 3px 8px black; 
-    height: auto;
-    background-color: transparent;
-
-}
-
-.img2 { /* Vertical Images */
-    box-shadow: 3px 3px 8px black; 
-    width: auto;
-    background-color: transparent;
-}
-
-.card_grid { /* Card Grid Controls*/
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 2rem;
 }
