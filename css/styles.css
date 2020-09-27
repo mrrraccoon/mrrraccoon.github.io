@@ -82,7 +82,7 @@ td {
 #nav {
     display:flex;
     flex-direction: row;
-    align-items: left;
+    align-items: right;
     margin:0;
     padding: 0.05em;
     font-family: 'Poiret One', sans-serif;
