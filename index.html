@@ -4,9 +4,6 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Favicon --> <!-- FIXME: Create actual icon -->
-    
     <link rel="shortcut icon" href="http://example.com/favicon.ico">
     
     <title>T Simpson | Does Things </title>    
@@ -15,26 +12,19 @@
     <!--                      External Viewport Stylesheets                      -->
     <!-- ----------------------------------------------------------------------- -->
 
-    <!-- Desktop and Main Stylesheet -->
-    <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- Tablet viewport Reference -->
-    <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="/css/tablet.css">
     
-    <!-- Phone Handset viewport Reference -->
-    <link rel="stylesheet" media="screen and (max-device-width: 420px)" href="/css/handset.css">
+    <link rel="stylesheet" href="/css/styles.css"><!-- Desktop and Main Stylesheet -->
+    <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="/css/tablet.css"><!-- Tablet viewport Reference -->
+    <link rel="stylesheet" media="screen and (max-device-width: 420px)" href="/css/handset.css"><!-- Phone Handset viewport Reference -->
 
-    <!-- ----------------------------------------------------------------------- -->
-    <!--     All Other External Stylesheets or Frameworks or Link References     -->
-    <!-- ----------------------------------------------------------------------- -->
+    <!--     External Stylesheets, Frameworks, Link References     -->
 
-    <!-- Bootstrap Framework -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poiret+One&family=Unica+One&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><!-- Bootstrap Framework -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap"><!-- Google Fonts -->
+
+    <!-- --------------------- End of External Stylesheets --------------------- -->
+
+
 </head>
 
     <!-- ----------------------------------------------------------------------- -->
@@ -52,9 +42,13 @@
                 where you are in your education in terms of skill levels. And what 
                 your final goal is for all this.
                 Include a link to your "dope and cool" CV.
+        TODO: Redo the gallery to be more mobile friendly.
+        TODO: Place buttons at the end of each section if a link is required to jump 
+                to another section.
 
     -->
     <!-- -------------------------- End of TODO LIST --------------------------- -->
+
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                               FIXME LIST                                -->
@@ -64,75 +58,84 @@
         FIXME: Currently trying to use the url(); but whenever I use RDM in FirefoxDE
                 the image stays the same. Doesn't seem to be a syntx error. 
                 ln 28, styles.css
+        FIXME: Create and embed favicon.
     
     -->
-
     <!-- -------------------------- End of FIXME list -------------------------- -->
 
 <body>
 
-  
     <!-- ----------------------------------------------------------------------- -->
-    <!--                                 Nav Bar                                 -->
+    <!--                      Responsive Nav Bar                                 -->
     <!-- ----------------------------------------------------------------------- -->
 
-            <div class="nav" id="myNav">
-                <a href="#home" class="active" alt="Home Button. Doesn't do much. But it's there.">Home</a> <!-- The active class highlights the home button for the user.  -->
-                <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">Blog</a></td>
-                <a href="#proj" alt="Current Projects. What I'm doing and why.">Projects</a></td>
-                <a href="/pgs/photos.html" alt="Nifty Photos I've made.">Photos</a></td>
-                <a href="/pgs/fict.html" alt="A collection of my fiction writing.">Fiction</a></td>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fas fa-bars"></i> <!--  Font Awesome icon solid pack icon-->
-                </a>
-            </div>
+        <div class="nav" id="myNav">
+            <a href="#home" alt="Home Button. Doesn't do much. But it's there.">Home</a> 
+            <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">Blog</a></td>
+            <a href="#proj" alt="Current Projects. What I'm doing and why.">Projects</a></td>
+            <a href="/pgs/photos.html" alt="Nifty Photos I've made.">Photos</a></td>
+            <a href="/pgs/fict.html" alt="A collection of my fiction writing.">Fiction</a></td>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i> <!--  Font Awesome icon solid pack icon-->
+            </a>
+        </div>
     
+    <!-- ---------------------------- End of Navbar ---------------------------- -->
+
     
-        
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                          Main Body of Content                           -->
+    <!-- ----------------------------------------------------------------------- -->
+
     <!-- ----------------------------- Cover Photo ----------------------------- -->
        
         <div>
            <img class="cover_photo" src="media/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina."> <!-- Corpus Christi Marina Image -->
         </div>
 
+    <!-- ------------------- Information Columns and Content ------------------- -->
 
-        
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                               News Cards                                -->
-    <!-- ----------------------------------------------------------------------- -->
-        
         <div class="card_grid">
 
                 <div class="column1">
                     <div class="content">
                         <h2>About</h2>
                         <p>
-                            When not helping guide the climbing community through instruction and training, I like to adventure outdoors and write fiction and      meditate.<br><p>I'm an avid reader who enjoys history, philosophy, sci-fi, and many others. I collect copies of Dante's works and       maintain a growing book collection. <br>
+                            When not helping guide the climbing community through instruction and training, I like to adventure outdoors and write fiction and meditate.<br><p>I'm an avid reader who enjoys history, philosophy, sci-fi, and many others. I collect copies of Dante's works and maintain a growing book collection. <br>
                             <p>I like plants, cats, and follow the Ch'an Buddhist lineage. I blog in my spare time.
                         </p>
                     </div>
                 </div> 
             
+
                 <div class="column1">
 
                     <div id="proj" class="content">
                         <h2>Current Projects</h2>
-                        <h3 style="font-family: 'Poiret One';"><b>Climbing</b></h3>
+                        
+                        <h3><b>Climbing</b></h3>
                         <ul>
+
                             <li>Senor Fuerte, v7</li> 
                             <div class="li1">Roger's Park, Belton, Texas</div>
                             <div class="li1">So why this piece? I just like where it goes. It's not on my particularly favorite type of hold, pockets, but it's something to work out when I need a focus. One of the hardest things I've experienced as a climber is focusing on hard problems to really understand them and thus expand my strategies.</div>
                             <li>Comfortably send v9/v10 range</li>
                             <div class="li1">I'm more an indoor climber as it allows me access all year.</div>
+                        
                         </ul>
-                        <hr>
-                        <h3 style="font-family: 'Poiret One';"><b>Writing</b></h3>
+                        
+                        <hr><!-- Nice divider, could take it or leave it when it comes to the over all design of the page. Possibly remove with DOM manipulation.-->
+                        
+                        <h3><b>Writing</b></h3>
                         <ul>
+                            
                             <li><em>The Mobia</em></li>
-                            <div class="li1">A generational sci-fi saga of one woman's journey to the brink of humanity as universal machinations work against      her every step of the way.</div>
+                            <div class="li1">A generational sci-fi saga of one woman's journey to the brink of humanity as universal machinations work against her every step of the way.</div>
                             <li><em>Bone Creek Collection</em></li>
-                            <div class="li1">Set against the Gila mountains in what will one day become Yuma, Arizona a rugged cowboy and his companion tumble      with unlikely forces against the march of progress.</div>
+                            <div class="li1">Set against the Gila mountains in what will one day become Yuma, Arizona a rugged cowboy and his companion tumble with unlikely forces against the march of progress.</div>
+                        
                         </ul>
+                    
                     </div>
                 </div>
 
@@ -148,21 +151,28 @@
                 </div>
             
         </div>
+
+    <!-- --------------- End of Information Columns and Content ---------------- -->
         
+
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 Footer                                  -->
     <!-- ----------------------------------------------------------------------- -->
 
-        <div class="footer"><p style="text-align: center ">Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved</p></div>
+        <div class="footer">
+            <p>Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved</p>
+        </div>
+
+    <!-- ------------------------ End of Footer Content ------------------------ -->
+
 
     <!-- ----------------------------------------------------------------------- -->
-    <!--                            END OF DISPLAYED                             -->
+    <!--                        External Javascript files                        -->
     <!-- ----------------------------------------------------------------------- -->
 
-    <!-- ---------------------------- Google Fonts ----------------------------- -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+Onefamily=Unica+One&family=Roboto&familydisplay=swap');
-    </style>
-    <script src="Responsive Code/index.js"></script>
+        <script src="Responsive Code/index.js"></script>
+
+    <!-- --------------------- End of External Javascript ---------------------- -->
+
 </body>
 </html>
