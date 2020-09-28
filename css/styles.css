@@ -22,11 +22,6 @@
         float:right;
         display:block;
     }
-    .cover_photo {
-        src: url(https://images.unsplash.com/photo-1558129711-6e6a041475de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&);
-        width:100%;
-        height:auto;
-    }
 }
 
 @media screen and (max-width: 360px) {
@@ -190,10 +185,11 @@ p {
     line-height: 2.5em;
 }
 
-button { /* Basic site-wide button tag attributes */
+.btn a { /* Basic site-wide button tag attributes */
     margin:2px;
+    color: white;
     background-color: dimgray;
-    border-radius:10%;
+    border-radius:black solid 1px;
 }
 
 

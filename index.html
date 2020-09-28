@@ -35,16 +35,23 @@
         TODO: Create column class for both tablet and handset CSS
                 The mobile and tablet versions need to be rethought in terms of 
                 griding them out so they visually flow better for the eye. 
+                []]]]]----] 50% done.
         TODO: Decide which images to put for which viewport.
                 Try and use the current CSS that's in the Style file currently.
+                []]]]]]]--] 70% done.
         TODO: Write Comp Sci main page.
                 Basically what projects you've been working on for a while now and 
                 where you are in your education in terms of skill levels. And what 
                 your final goal is for all this.
                 Include a link to your "dope and cool" CV.
+                [----------] 0% done.
         TODO: Redo the gallery to be more mobile friendly.
+                [---------] 0% done.
         TODO: Place buttons at the end of each section if a link is required to jump 
                 to another section.
+                []]]------] 30% done.
+        TODO: Redo the whole fiction section. It's absolute garbage. The theme is off and it just looks bad, so so bad.
+                [---------] 0% done.
 
     -->
     <!-- -------------------------- End of TODO LIST --------------------------- -->
@@ -57,13 +64,14 @@
 
         FIXME: Currently trying to use the url(); but whenever I use RDM in FirefoxDE
                 the image stays the same. Doesn't seem to be a syntx error. 
-                ln 28, styles.css
+                line 28, styles.css
         FIXME: Create and embed favicon.
     
     -->
     <!-- -------------------------- End of FIXME list -------------------------- -->
 
 <body>
+
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                      Responsive Nav Bar                                 -->
@@ -90,7 +98,7 @@
     <!-- ----------------------------- Cover Photo ----------------------------- -->
        
         <div>
-           <img class="cover_photo" src="media/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina."> <!-- Corpus Christi Marina Image -->
+           <img class="cover_photo" src="/media/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina."> <!-- Corpus Christi Marina Image -->
         </div>
 
     <!-- ------------------- Information Columns and Content ------------------- -->
@@ -146,7 +154,7 @@
                         <p>Or at least you'd believe it had you known me at the time I first started writing. So, so many years ago all thanks to MTv and Billy Corgan. More specifically the <em>Mellon Collie and the Infinite Sadness</em> album.<br>
                         <p>There was just something about hearing it on MTv late in 1995 that opened the magical box. I clearly remember sitting in Social Studies and ripping off <em>Bullet With Butterfly Wings</em>. Oh what trash ensued.<br>
                         <p>Hopefully the things you read here will be marginally better than that.<br></p>
-                        <p><button><a href="pgs/fict.html" style="font-size: 1rem;">Read more!</a></button></p>
+                        <input type=button onclick="location.href='pgs/fict.html'" value='Read more!' class='btn'></a>
                     </div>
                 </div>
             
@@ -170,7 +178,8 @@
     <!--                        External Javascript files                        -->
     <!-- ----------------------------------------------------------------------- -->
 
-        <script src="Responsive Code/index.js"></script>
+        <script src="/scripts/navbar.js"></script>
+        <script src="/scripts/buttons.js"></script>
 
     <!-- --------------------- End of External Javascript ---------------------- -->
 
