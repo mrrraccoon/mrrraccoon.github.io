@@ -13,6 +13,7 @@
 
 /* ----------------------------- End Root Styles ---------------------------- */
 
+
 /* -------------------------------------------------------------------------- */
 /*                     @Mmedia calls for Responsive Design                    */
 /* -------------------------------------------------------------------------- */
@@ -99,8 +100,6 @@ p {
     text-indent: 2em;
 }
 
-/*    text-shadow: 3px 3px 3px #000000 ;*/
-
 /* ------------------------- End Universal Grab-bag ------------------------- */
 
 
@@ -110,34 +109,33 @@ p {
 
 .nav {
     background-color: #055887;
+    font-family: 'Poiret One';
     overflow: hidden;
 }
 
 .nav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 0;
+    margin: .5em;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 48px;
 }
 
 .nav a:hover {
     color: #f5cc9f;
-    /*color: white;*/
+    text-decoration: none;
+    text-shadow: 3px 3px 3px #000000 ;
 }
-
-/*.nav a.active {
-    border: #f5cc9f;
-    color: white;
-}*/
 
 .nav .icon {
     display: none;
 }
 
 /* ---------------------- End Responsive NavBar Styles ---------------------- */
+
 
 /* -------------------------------------------------------------------------- */
 /*                    Portfolio Body Grid Classes                             */
@@ -164,7 +162,7 @@ p {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                Footer Styles                               */
+/*                                Footer Style                                */
 /* -------------------------------------------------------------------------- */
 
 .footer {
@@ -183,18 +181,17 @@ p {
 
 
 /* -------------------------------------------------------------------------- */
-/*                             Class and Id Styles                            */
+/*                         Misc Tags, IDs, and Classes                        */
 /* -------------------------------------------------------------------------- */
-
-/* -------------------------- Grab-Bag Class Styles ------------------------- */
 
 .li1 {
     text-indent: 2em;
     line-height: 2.5em;
 }
 
-.button {
-    margin:2px
+button {
+    margin:2px;
+    background-color: dimgray;
 }
 
 .column1 {
@@ -215,3 +212,5 @@ p {
     object-fit: cover; 
     width: 100%;
 }
+
+/* --------------------- End Misc Tags, IDs, and Classes -------------------- */
