@@ -20,9 +20,14 @@
 
 @media screen and (max-width:768px) {
     .nav a:not(:first-child) {display:none;}
-    .nav a:icon {
+    .nav a.icon {
         float:right;
         display:block;
+    }
+    .cover_photo {
+        src: url(https://images.unsplash.com/photo-1558129711-6e6a041475de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&);
+        width:100%;
+        height:auto;
     }
 }
 
@@ -121,7 +126,7 @@ p {
     padding: 0;
     margin: .5em;
     text-decoration: none;
-    font-size: 48px;
+    font-size: xx-large;
 }
 
 .nav a:hover {
