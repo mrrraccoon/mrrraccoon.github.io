@@ -170,12 +170,14 @@ p {
     width: 100%;
 }
 
+
 .card_grid { /* Card Grid Controls */
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 1fr;
     padding: 2rem;
 }
+
 
 .column1 {
     padding: 0;
@@ -190,10 +192,11 @@ p {
     line-height: 2.5em;
 }
 
-button { /* Basic site-wide button tag attributes */
+.btn a { /* Basic site-wide button tag attributes */
     margin:2px;
+    color: white;
     background-color: dimgray;
-    border-radius:10%;
+    border-radius:black solid 1px;
 }
 
 
