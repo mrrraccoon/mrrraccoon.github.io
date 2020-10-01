@@ -22,8 +22,8 @@
         float:right;
         display:block;
     }
-    .cover_photo {
-        src: url(https://images.unsplash.com/photo-1558129711-6e6a041475de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&);
+    .cover_photo {  /* Find a work around for the image swap. */
+        src: url(https://images.unsplash.com/photo-1558129711-6e6a041475de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&); 
         width:100%;
         height:auto;
     }

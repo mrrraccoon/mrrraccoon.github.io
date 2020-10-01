@@ -64,13 +64,12 @@
 
         FIXME: Currently trying to use the url(); but whenever I use RDM in FirefoxDE
                 the image stays the same. Doesn't seem to be a syntx error. 
-                line 28, styles.css
         FIXME: Create and embed favicon.
-    
+
     -->
     <!-- -------------------------- End of FIXME list -------------------------- -->
 
-<body>
+<body onload="greeting()">
 
 
     <!-- ----------------------------------------------------------------------- -->
@@ -94,6 +93,10 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                          Main Body of Content                           -->
     <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ---------------------------- Greeting Tag ----------------------------- -->
+
+        <div class="greeting">Hello. :)</div>
 
     <!-- ----------------------------- Cover Photo ----------------------------- -->
        
@@ -180,6 +183,7 @@
 
         <script src="/scripts/navbar.js"></script>
         <script src="/scripts/buttons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- --------------------- End of External Javascript ---------------------- -->
 
