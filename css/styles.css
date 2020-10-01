@@ -9,6 +9,10 @@
     font-family: 'Poiret One', cursive;
 }
 
+.greeting {
+    text-align: center;
+    font-size: medium;
+}
 /* ----------------------------- End Root Styles ---------------------------- */
 
 

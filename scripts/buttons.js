@@ -1,3 +1,3 @@
-function greeting() {
-    $("greeting").fadeIn(5000);
-};
+$(document).ready(function () {
+    $("greeting").fadeOut(1000, function ());
+});
