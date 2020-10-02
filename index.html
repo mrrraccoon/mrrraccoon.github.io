@@ -32,6 +32,7 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--
 
+        TODO: Just figure out how to make multiple images change for the coverphoto.
         TODO: Decide which images to put for which viewport.
                 Try and use the current CSS that's in the Styles file.
                 []]]]]]]--] 70% done.
@@ -46,7 +47,8 @@
         TODO: Place buttons at the end of each section if a link is required to jump 
                 to another section.
                 []]]------] 30% done.
-        TODO: Redo the whole fiction section. It's absolute garbage. The theme is off and it just looks bad, so so bad.
+        TODO: Redo the whole fiction section. It's absolute garbage. The theme is off 
+                and it just looks bad, so so bad.
                 [---------] 0% done.
 
     -->
@@ -89,17 +91,16 @@
     <!--                          Main Body of Content                           -->
     <!-- ----------------------------------------------------------------------- -->
 
-    <!-- ---------------------------- Greeting Tag ----------------------------- -->
-
-        <div class="greeting" id="grt">Hello. :)</div>
-
     <!-- ----------------------------- Cover Photo ----------------------------- -->
-       
+    <!--   
         <div>
-           <img class="cover_photo" src="/media/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina."> <!-- Corpus Christi Marina Image -->
+           <img class="cover_photo" src="/media/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina.">  Corpus Christi Marina Image 
         </div>
+    -->
+        <source media="(max-width: 768px)" src="/media/gallery_images/IMG_3106.JPG" style="width: 768px;">
+        <source media="(max-width: 420px)" src="/media/gallery_images/gone.jpg" style="width: 364px;">
+        <img class="cover_photo" src="/media/gallery_images/IMG_1696.jpg" alt="Corpus Christi Marina ">
 
-        <source media="()" srcset="">
 
     <!-- ------------------- Information Columns and Content ------------------- -->
 
