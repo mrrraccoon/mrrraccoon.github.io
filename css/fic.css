@@ -1,12 +1,20 @@
-/*This is the main styles page for the Fiction Page, It's the main hub for all textual projects and styles sheets should use this as the main jumping off point. */
+/* -------------------------------------------------------------------------- */
+/*                                 Root Styles                                */
+/* -------------------------------------------------------------------------- */
 
 :root {
     width: 100%;
     height: 100%;
-    font-family: 'Gilda Display', serif;
+    font-family: 'Open Sans', sans-serif;
     font-family: 'Poiret One', cursive;
-    font-family: 'Unica One', cursive;
 }
+
+/* ----------------------------- End Root Styles ---------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/*                            Universal Tag Styles                            */
+/* -------------------------------------------------------------------------- */
 
 body {
     margin: 0;
@@ -25,8 +33,15 @@ body {
      color:#237297;  
  }
 
+/* ------------------------- End Universal Grab-bag ------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/*                                NavBar Styles                               */
+/* -------------------------------------------------------------------------- */
+
 .nav {
-    background: linear-gradient(#237297, #ffffff);
+    background: white;
     padding: 2em;
     color: #000;
     text-align: right;
@@ -35,8 +50,11 @@ body {
     font-family: 'Poiret One', cursive;
 }
 
+
+/* ---------------------------- End Navbar Styles --------------------------- */
+
 .title {
-    background: linear-gradient(#237297 60%, #000000);
+    background: #237297;
     color: #ffffff;
     text-shadow: 3px 3px 8px #000000;
     font-family: 'Poiret One', cursive; 
