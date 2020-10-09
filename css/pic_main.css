@@ -42,66 +42,6 @@
 
 
 /* -------------------------------------------------------------------------- */
-/*                            Universal Tag Styles                            */
-/* -------------------------------------------------------------------------- */
-
-* {
-    background-color: #055887;
-    scrollbar-width: none;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-h1 {
-    font-family: 'Poiret One', sans-serif; 
-    font-size: xx-large;
-    text-shadow: 3px 3px 3px #000000 ;
-}
-
-h2 {
-    font-family: 'Poiret One';
-    text-align: center;
-    font-size: larger;
-    color:#ffffff;
-    text-shadow: 3px 3px 3px #000000 ;
-}
-
-h3 b {
-    font-family: 'Poiret One';
-    font-size: large;
-    color: white;
-}
-
-ul {
-    font-family: 'Open Sans',sans-serif;
-    color: white;
-    text-align: justify;
-    font-size: small;
-    list-style-type: none;   
-} 
-
-li {
-    font-family: 'Open Sans',sans-serif;
-    color: #f5cc9f;
-    text-align: justify;
-    font-size: small;
-    list-style-type: none;   
-} 
-
-p {
-    font-family: 'Open Sans',sans-serif;
-    color: white;
-    text-align: justify;
-    font-size: small;
-    list-style-type: none;
-    text-indent: 2em;
-}
-
-/* ------------------------- End Universal Grab-bag ------------------------- */
-
-
-/* -------------------------------------------------------------------------- */
 /*                          Responsive NavBar Styles                          */
 /* -------------------------------------------------------------------------- */
 
@@ -129,65 +69,52 @@ p {
 }
 
 .nav .icon {
-    display: icon {fas fa-bars};
+    display: none;
 }
 
 /* ---------------------- End Responsive NavBar Styles ---------------------- */
 
 
-/* -------------------------------------------------------------------------- */
-/*                    Information Column and Content Styles                   */
-/* -------------------------------------------------------------------------- */
+* {
+    background-color:  #055887;
+}
 
-.cover_photo { /* Banner cover photo */
-    object-fit: cover; 
+.img1{
     width: 100%;
+    height:100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px black;
 }
 
-.card_grid { /* Card Grid Controls */
-    display: grid;
-    grid-gap: 2rem;
+.img2{
+    width: auto;
+    height:100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px black;
+}
+
+.photo_grid {
+    display:grid;
+    margin: 0;
+    padding-left: auto;
+    padding-right: auto;
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem;
+    grid-auto-rows: auto;
+    grid-gap:1em;
+}   
+
+.box1{
+    grid-column: 1/2;
+    grid-row: auto;
+    box-shadow: 2px 2px 4px black;
 }
 
-.column1 {
-    padding: 0;
+.box2{
+    grid-column: 2/3;
+    grid-row: auto;
+    box-shadow: 2px 2px 4px black;
 }
 
-.content {
-    line-height: 2em;
-}
-
-.li1 { /* Aa fake paragraph class that mimics how the paragraph would be normally laid out */
-    text-indent: 2em;
-    line-height: 2.5em;
-}
-
-.btn { /* Basic site-wide button */
-    margin:2px;
-    color: white;
-    background-color: dimgray;
-    border-radius:black solid 1px;
-}
-
-
-.btn a { /* Basic site-wide button tag  w/ anchor attributes */
-    margin:2px;
-    color: white;
-    background-color: dimgray;
-    border-radius:black solid 1px;
-}
-
-
-.row:after { 
-    content:"";
-    display:table;
-    clear:both;
-}
-
-
-/* --------------------- End of Info Column and Content --------------------- */
 
 
 /* -------------------------------------------------------------------------- */
