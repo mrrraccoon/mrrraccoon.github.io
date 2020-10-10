@@ -8,17 +8,9 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poiret One', cursive;
     overflow-wrap: normal;
-}
+    scrollbar-width: none;  /* Eliminates scrollbar for Firefox */
 
--ms-webkit-scrollbar { /* What's going on with this attribute? */
-  display: none;
-}
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
 /* ----------------------------- End Root Styles ---------------------------- */
 
 

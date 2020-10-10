@@ -7,6 +7,7 @@
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poiret One', cursive;
+    scrollbar-width: none;
 }
 
 /* ----------------------------- End Root Styles ---------------------------- */
