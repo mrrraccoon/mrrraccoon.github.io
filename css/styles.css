@@ -120,17 +120,16 @@ p {
     margin: .5em;
     text-decoration: none;
     font-size: xx-large;
+    text-shadow: 3px 3px 3px #000000;
 }
 
 .nav a:hover {
     color: #f5cc9f;
     text-decoration: none;
-    text-shadow: 3px 3px 3px #000000 ;
+
 }
 
-.nav .icon {
-    display: icon {fas fa-bars};
-}
+
 
 /* ---------------------- End Responsive NavBar Styles ---------------------- */
 
@@ -159,24 +158,28 @@ p {
     line-height: 2em;
 }
 
-.li1 { /* Aa fake paragraph class that mimics how the paragraph would be normally laid out */
+.li1 { /* A fake paragraph class that mimics how the paragraph would be normally laid out */
     text-indent: 2em;
     line-height: 2.5em;
 }
 
 .btn { /* Basic site-wide button */
     margin:2px;
-    color: white;
-    background-color: dimgray;
-    border-radius:black solid 1px;
+    padding:5px;
+    border:5px;
+    height:3rem;
+    width:6rem;
+    color: #000000;
+    background: linear-gradient(#ffffff 65%, #696969);
+    border-radius: 10%;
+    box-shadow: #000000 0px 2px 6px;
 }
 
 
-.btn a { /* Basic site-wide button tag  w/ anchor attributes */
-    margin:2px;
-    color: white;
-    background-color: dimgray;
-    border-radius:black solid 1px;
+.btn a:hover { /* Basic site-wide button tag  w/ anchor attributes */
+    color:dimgray;
+    background: #f5cc9f;
+
 }
 
 
