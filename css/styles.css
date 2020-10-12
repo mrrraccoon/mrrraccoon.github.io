@@ -179,9 +179,24 @@ p {
 .btn a:hover { /* Basic site-wide button tag  w/ anchor attributes */
     color:dimgray;
     background: #f5cc9f;
-
+    cursor: pointer;
 }
 
+#about {
+    height: 240px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#proj {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+#fiction {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
 
 .row:after { 
     content:"";
