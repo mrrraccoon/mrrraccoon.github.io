@@ -55,21 +55,19 @@
 
 h1 {
     font-family: 'Poiret One', sans-serif; 
-    font-size: xx-large;
-    text-shadow: 3px 3px 3px #000000 ;
+    font-size: 3rem;
 }
 
 h2 {
     font-family: 'Poiret One';
     text-align: center;
-    font-size: larger;
+    font-size: 2rem;
     color:#ffffff;
-    text-shadow: 3px 3px 3px #000000 ;
 }
 
 h3 b {
     font-family: 'Poiret One';
-    font-size: large;
+    font-size: 1.28rem;
     color: white;
 }
 
@@ -77,7 +75,7 @@ ul {
     font-family: 'Open Sans',sans-serif;
     color: white;
     text-align: justify;
-    font-size: small;
+    font-size: 1.28rem;
     list-style-type: none;   
 } 
 
@@ -85,7 +83,7 @@ li {
     font-family: 'Open Sans',sans-serif;
     color: #f5cc9f;
     text-align: justify;
-    font-size: small;
+    font-size: 1.28rem;
     list-style-type: none;   
 } 
 
@@ -93,8 +91,8 @@ p {
     font-family: 'Open Sans',sans-serif;
     color: white;
     text-align: justify;
-    font-size: small;
-    list-style-type: none;
+    font-size: 1.28rem;
+    list-style-type: none;    
     text-indent: 2em;
 }
 
@@ -156,6 +154,7 @@ p {
 
 .content {
     line-height: 2em;
+    font-size:1.28rem;
 }
 
 .li1 { /* A fake paragraph class that mimics how the paragraph would be normally laid out */
@@ -168,10 +167,9 @@ button { /* Basic site-wide button */
     padding:2.5px;
     border:1px solid white;
     height:3rem;
-    width:6rem;
+    width:auto;
     color: white;
     border-radius: 10%;
-    box-shadow: #000000 0px 2px 6px;
     cursor: pointer;
 }
 
