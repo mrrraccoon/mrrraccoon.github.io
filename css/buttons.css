@@ -3,19 +3,29 @@ button { /* Universal Button */
     height:auto;
     padding:1rem;
     margin: auto;
+    color: white;
     border:1px solid white;
     cursor: pointer;
-    border-radius: 10%;
+
 }
 
+button:focus {
+    background: limegreen;
+    border: 3px solid limegreen;
+}
 button:hover {
     width:auto;
     height:auto;
     background: #f5cc9f;
-    border:1px solid white; 
+    color: #055887;
+    border:1px solid white;
+    text-emphasis: em; 
 }
 
 button:active {
     width: auto;
     height: auto;
+    background: white;
+    color: #055887;
+    border:1px solid #055887;
 }

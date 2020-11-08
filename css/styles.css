@@ -33,11 +33,23 @@
         display: grid;
         grid-gap: .25rem;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
         padding: .25rem;
+    }
+
+    #about {
+        height: 240px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    #fiction {
+        grid-column: 1/2;
+        grid-row: 2/4;
     }
 }
 
-@media screen and (max-width: 360px) { /* All CSS attributes for handheld. */
+@media screen and (max-width: 380px) { /* All CSS attributes for handheld. */
     
     h1{
         font-size:1rem;
@@ -51,10 +63,20 @@
     }
 
     .card_grid { 
-        display: grid;
-        grid-gap: .25rem;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
         padding: .25rem;
+    }
+
+    .column1 {
+        width: 100%;
+        padding: 0;
+}
+
+    #about {
+        height: 240px;
+    }
+
+    #fiction {
     }
 }
 
@@ -80,7 +102,7 @@ h1 {
 
 h2 {
     font-family: 'Poiret One' sans-serif;
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     color:#ffffff;
 }
@@ -167,7 +189,7 @@ p {
 .card_grid { /* Card Grid Controls */
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
 }
 
@@ -188,11 +210,6 @@ p {
 #about {
     height: 240px;
     grid-column: 1/2;
-    grid-row: 1/3;
-}
-
-#proj {
-    grid-column: 2/4;
     grid-row: 1/3;
 }
 
