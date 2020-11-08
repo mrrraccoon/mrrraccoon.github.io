@@ -14,6 +14,7 @@
 
     
     <link rel="stylesheet" href="/css/styles.css"><!-- Desktop and Main Stylesheet -->
+    <link rel="stylesheet" href="/css/buttons.css"><!-- Button Module CSS -->
     <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="/css/tablet.css"><!-- Tablet viewport Reference -->
     <link rel="stylesheet" media="screen and (max-device-width: 420px)" href="/css/mobile.css"><!-- Phone Handset viewport Reference -->
 
@@ -45,11 +46,10 @@
                 []]]]]]]]]-] 90% done.
         TODO: Place buttons at the end of each section if a link is required to jump 
                 to another section.
-                []]]------] 30% done.
+                []]]]]]---] 60% done.
         TODO: Redo the whole fiction section. It's absolute garbage. The theme is off 
                 and it just looks bad, so so bad.
                 []]]]-----] 40% done.
-        TODO: Finish up Fiction and Photos pages.
 
     -->
     <!-- -------------------------- End of TODO LIST --------------------------- -->
@@ -60,8 +60,6 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--
 
-        FIXME: Currently trying to use the url(); but whenever I use RDM in FirefoxDE
-                the image stays the same. Doesn't seem to be a syntx error. 
         FIXME: Create and embed favicon.
 
     -->
@@ -76,12 +74,8 @@
         <div class="nav" id="myNav">
             <a href="#home" alt="Home Button. Doesn't do much. But it's there.">Home</a> 
             <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">Blog</a>
-            <a href="#proj" alt="Current Projects. What I'm doing and why.">Projects</a>
             <a href="/pgs/photos.html" alt="Nifty Photos I've made.">Photos</a>
             <a href="/pgs/fict.html" alt="A collection of my fiction writing.">Fiction</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fas fa-bars"></i> <!--  Font Awesome icon solid pack icon-->
-            </a>
         </div>
     
     <!-- ---------------------------- End of Navbar ---------------------------- -->
@@ -92,16 +86,11 @@
     <!-- ----------------------------------------------------------------------- -->
 
     <!-- ----------------------------- Cover Photo ----------------------------- -->
-    <!--   
+      
         <div>
-           <img class="cover_photo" src="/media/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina.">  Corpus Christi Marina Image 
+           <img class="cover_photo" src="/media/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina.">
+           <p class="caption">Corpus Christi Marina, Corpus Christi Texas, 2017.</p>
         </div>
-    -->
-        <source media="(max-width: 768px)" src="/media/gallery_images/IMG_3106.JPG" style="width: 768px;">
-        <source media="(max-width: 420px)" src="/media/gallery_images/gone.jpg" style="width: 364px;">
-        <img class="cover_photo" src="/media/gallery_images/IMG_1696.jpg" alt="Corpus Christi Marina ">
-            
-            <!-- This still doesn't seem to work. Not sure why.-->
 
     <!-- ------------------- Information Columns and Content ------------------- -->
 
@@ -122,37 +111,6 @@
                     </div>
                 </div> 
             
-
-                <div class="column1">
-                    <div id="proj" class="content">
-                        <h2>Current Projects</h2>
-                        
-                        <h3><b>Climbing</b></h3>
-                        <ul>
-
-                            <li>Senor Fuerte, v7</li> 
-                            <div class="li1">Roger's Park, Belton, Texas</div>
-                            <div class="li1">So why this piece? I just like where it goes. It's not on my particularly favorite type of hold, pockets, but it's something to work out when I need a focus. One of the hardest things I've experienced as a climber is focusing on hard problems to really understand them and thus expand my strategies.</div>
-                            <li>Comfortably send v9/v10 range</li>
-                            <div class="li1">I'm more an indoor climber as it allows me access all year.</div>
-                        
-                        </ul>
-                        
-                        <hr><!-- Nice divider, could take it or leave it when it comes to the over all design of the page. Possibly remove with DOM manipulation.-->
-                        
-                        <h3><b>Writing</b></h3>
-                        <ul>
-                            
-                            <li><em>The Mobia</em></li>
-                            <div class="li1">A generational sci-fi saga of one woman's journey to the brink of humanity as universal machinations work against her every step of the way.</div>
-                            <li><em>Bone Creek Collection</em></li>
-                            <div class="li1">Set against the Gila mountains in what will one day become Yuma, Arizona a rugged cowboy and his companion tumble with unlikely forces against the march of progress.</div>
-                        
-                        </ul>
-                    
-                    </div>
-                </div>
-
                 <div class="column1">
                     <div id="fiction" class="content">
                         <h2>Fiction</h2>

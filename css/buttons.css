@@ -1,0 +1,21 @@
+button { /* Universal Button */
+    width:auto;
+    height:auto;
+    padding:1rem;
+    margin: auto;
+    border:1px solid white;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+button:hover {
+    width:auto;
+    height:auto;
+    background: #f5cc9f;
+    border:1px solid white; 
+}
+
+button:active {
+    width: auto;
+    height: auto;
+}
