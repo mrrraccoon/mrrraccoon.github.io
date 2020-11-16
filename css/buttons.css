@@ -1,4 +1,8 @@
-button { /* Universal Button */
+/* Universal Buttons */
+
+
+/* Basic white outlined button. */
+button { 
     width:auto;
     height:auto;
     padding:1rem;
@@ -9,10 +13,13 @@ button { /* Universal Button */
 
 }
 
+/* Basic white button focus*/
 button:focus {
     background: limegreen;
     border: 3px solid limegreen;
 }
+
+/* Basic white button hover state*/
 button:hover {
     width:auto;
     height:auto;
@@ -22,6 +29,7 @@ button:hover {
     text-emphasis: em; 
 }
 
+/* Basic white button active state */
 button:active {
     width: auto;
     height: auto;
