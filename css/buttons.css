@@ -1,5 +1,7 @@
 /* Universal Buttons */
-
+* {
+    background: lightslategray;
+}
 
 /* Basic white outlined button. */
 button { 
@@ -40,7 +42,30 @@ button:active {
 
 /* -------------------------- buttontest page below ------------------------- */
 
-div.buttonMain.static {
-    background: transparent;
-    
+.container {
+    display:flex;
+    flex-direction: left;
+}
+
+.buttonMain {
+    background: grey;
+    border: 2px solid red;    
+}
+
+.buttonMain:hover {
+    color: black;
+    background: hotpink;
+    border: 3px  solid lime;
+}
+
+.longButton {
+    color:lightgreen;
+    background:lightblue;
+    border:2px solid lightpink;
+}
+
+.longButton:hover {
+    color: black;
+    background: lightgreen;
+    border: 2px solid lightblue;
 }
