@@ -59,12 +59,13 @@
     h2 {
         font-size:.5rem;
     }
+    
     h3 b {
         font-size: .25rem;
     }
 
     .card_grid { 
-        display: flex;
+        width: 100%;
         padding: .25rem;
     }
 

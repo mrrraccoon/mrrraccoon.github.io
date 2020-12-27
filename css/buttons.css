@@ -1,4 +1,4 @@
-
+/* -------------------------- Actual Usage Buttons -------------------------- */
 /* Basic white outlined button. */
 button { 
     width:auto;
@@ -55,29 +55,4 @@ button:active {
     color: black;
     background: hotpink;
     border: 3px  solid lime;
-}
-
-/* Just a really ugly ass button, not sure what I was aiming for here. */
-
-.longButton {
-    width: 100%;
-    color:lightgreen;
-    background:lightblue;
-    border:2px solid lightpink;
-}
-
-.longButton:hover {
-    width: 100%;
-    color: black;
-    background: lightgreen;
-    border: 2px solid lightblue;
-}
-
-/* A subtle shadow effect for hover */
-
-.superDuperLongButton:hover {
-    color: white;
-    background: transparent;
-    text-shadow: 2px 2px 4px black;
-    box-shadow: 2px 2px 4px black;
 }
