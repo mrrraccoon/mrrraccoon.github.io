@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Project Tempo: An interactive adlib demo</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body style="background-color: #007965;">
+
+    <div class="w3-panel">
+        <!-- Title-->
+
+        <h3 id="nameplateFront" style="color: #ffffff">Project<span id="nameplateBack" style="color:#00af91">Tempo_</h3>
+
+        <p style="padding-left:1em; line-height: .5em; color:#ffffff;">An interactive adlib demo</p>
+
+    </div>
+
+    <div id="controls">
+        <!--  Main Controls -->
+
+        <div id="story-selector" class="w3-center w3-headercolor">
+
+            <div class="w3-bar">
+                <!-- Copy Generator Controls-->
+
+                <!-- Random Story Generator button -->
+                <button id="btn1"
+                    class="w3-button w3-bar-item w3-bottombar w3-border-teal w3-hover-border-orange w3-hover-teal"
+                    onclick="buttonLogic()">Random Story</button>
+                <!-- Snowstorm Story Button -->
+                <button id="btn2"
+                    class="w3-button w3-bar-item w3-bottombar w3-border-teal w3-hover-border-orange w3-hover-teal"
+                    onclick="story01()">Snow Storm</button>
+                <!-- story 2 button-->
+                <button id="btn3"
+                    class="w3-button w3-bar-item w3-bottombar w3-border-teal w3-hover-border-orange w3-hover-teal"
+                    onclick="story02()">Story 2</button>
+                <!-- Anthill Story Button-->
+                <button id="btn4"
+                    class="w3-button w3-bar-item w3-bottombar w3-border-teal w3-hover-border-orange w3-hover-teal"
+                    onclick="story03()">Ant Hill</button>
+
+            </div>
+
+            <br>
+
+            <div class="w3-bar">
+                <!-- Button stylings and onclick calls-->
+
+                <!-- Noun -->
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    class="w3-button w3-bar-item w3-hover-teal">Noun</button>
+                <!-- Verb -->
+                <button onclick="document.getElementById('id02').style.display='block'"
+                    class="w3-button w3-bar-item w3-hover-teal">Verb</button>
+                <!-- Adjective -->
+                <button onclick="document.getElementById('id03').style.display='block'"
+                    class="w3-button w3-bar-item w3-hover-teal">Adjective</button>
+                <!-- Adverb-->
+                <button onclick="document.getElementById('id04').style.display='block'"
+                    class="w3-button w3-bar-item w3-hover-teal">Adverb</button>
+                <!-- Pronoun-->
+                <button onclick="document.getElementById('id05').style.display='block'"
+                    class="w3-button w3-bar-item w3-hover-teal">Pronoun</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div id="copy-output">
+        <!-- All other DOM loads are placed below -->
+
+        <div id="pageLoad" class="w3-border-0 w3-justify"></div> <!-- input from the new P element-->
+
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Modal Cards                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div id="id01" class="w3-modal">
+        <!-- id01-->
+        <div class="w3-modal-content w3-card-4">
+            <!-- Card01 Container-->
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-hover-orange w3-display-topright">&times;</span>
+                <h2>Noun</h2>
+            </header>
+
+            <div class="w3-container w3-teal">
+                <p>A word (other than a pronoun) used to identify any of a class of people, places, or things ( common
+                    noun ), or to name a
+                    particular one of these ( proper noun ).</p>
+            </div>
+
+            <footer class="w3-container w3-teal">
+                <p>Learn More @ <a>Wikipedia</a></p>
+            </footer>
+
+        </div>
+
+        <script> // Click close modal script
+
+            let modal = document.getElementById('id01');
+
+            // Close the modal
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </div>
+
+    <div id="id02" class="w3-modal">
+        <!-- id02-->
+        <div class="w3-modal-content w3-card-4">
+            <!-- Card02 Container -->
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id02').style.display='none'"
+                    class="w3-button w3-hover-orange w3-display-topright">&times;</span>
+                <h2>Verb</h2>
+            </header>
+
+            <div class="w3-container w3-teal">
+                <p>A word used to describe an action, state, or occurrence, and forming the main part of the predicate
+                    of a sentence, such
+                    as hear, become, happen.</p>
+            </div>
+
+            <footer class="w3-container w3-teal">
+                <p>Learn More @ <a>Wikipedia</a></p>
+            </footer>
+
+        </div>
+
+        <script> // Click close modal script
+
+            let modal = document.getElementById('id02');
+
+            // Close the modal
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </div>
+
+    <div id="id03" class="w3-modal">
+        <!-- id03-->
+        <div class="w3-modal-content w3-card-4">
+            <!-- Card03 Container -->
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id03').style.display='none'"
+                    class="w3-button w3-hover-orange w3-display-topright">&times;</span>
+                <h2>Adjective</h2>
+            </header>
+
+            <div class="w3-container w3-teal">
+                <p>Adjective: A word or phrase naming an attribute, added to or grammatically related to a noun to
+                    modify or describe it.</p>
+            </div>
+
+            <footer class="w3-container w3-teal">
+                <p>Learn More @ <a>Wikipedia</a></p>
+            </footer>
+
+        </div>
+
+        <script> // Click close modal script
+
+            let modal = document.getElementById('id03');
+
+            // Close the modal
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </div>
+
+    <div id="id04" class="w3-modal">
+        <!-- id04-->
+        <div class="w3-modal-content w3-card-4">
+            <!-- Card04 Container-->
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id04').style.display='none'"
+                    class="w3-button w3-hover-orange w3-display-topright">&times;</span>
+                <h2>Adverb</h2>
+            </header>
+
+            <div class="w3-container w3-teal">
+                <p>A word or phrase that modifies or qualifies an adjective, verb, or other adverb or a word group,
+                    expressing a relation
+                    of place, time, circumstance, manner, cause, degree, etc. (e.g., gently, quite, then, there ).</p>
+            </div>
+
+            <footer class="w3-container w3-teal">
+                <p>Learn More @ <a>Wikipedia</a></p>
+            </footer>
+
+        </div>
+
+        <script> // Click close modal script
+
+            let modal = document.getElementById('id04');
+
+            // Close the modal
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </div>
+
+    <div id="id05" class="w3-modal">
+        <!-- id05-->
+        <div class="w3-modal-content w3-card-4">
+            <!-- Card05 Container -->
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id05').style.display='none'"
+                    class="w3-button w3-hover-orange w3-display-topright">&times;</span>
+                <h2>Pronoun</h2>
+            </header>
+
+            <div class="w3-container w3-teal">
+                <p>A word that can function by itself as a noun phrase and that refers either to the participants in the
+                    discourse
+                    or to someone or something mentioned elsewhere in the discourse.</p>
+            </div>
+
+            <footer class="w3-container w3-teal">
+                <p>Learn More @ <a>Wikipedia</a></p>
+            </footer>
+
+        </div>
+
+        <script> // Click close modal script
+
+            let modal = document.getElementById('id05');
+
+            // Close the modal
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="story.js"></script>
+    <script src="def.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+</body>
+
+</html>

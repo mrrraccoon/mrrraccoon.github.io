@@ -12,11 +12,17 @@
     <!--                      External Viewport Stylesheets                      -->
     <!-- ----------------------------------------------------------------------- -->
 
-    
-    <link rel="stylesheet" href="/css/styles.css"><!-- Desktop and Main Stylesheet -->
-    <link rel="stylesheet" href="/css/buttons.css"><!-- Button Module CSS -->
+    <!-- ---------------------------- w3 school CSS ---------------------------- -->
 
-    <!--     External Stylesheets, Frameworks, Link References     -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-ios.css">
+
+    <!-- ----------------------------- Custom CSS ------------------------------ -->
+
+    <link rel="stylesheet" href="/css/styles.css"><!-- Desktop and Main Stylesheet -->
+
+    <!-- ---------------------------- Google Fonts ----------------------------- -->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap"><!-- Google Fonts -->
 
@@ -24,52 +30,33 @@
 
 
 </head>
-
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                                TODO LIST                                -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!--
-
-        TODO: Write Comp Sci main page.
-                Basically what projects you've been working on for a while now and 
-                where you are in your education in terms of skill levels. And what 
-                your final goal is for all this.
-                Include a link to your "dope and cool" CV.
-                [----------] 0% done. I'm too busy actually doing the work, go figure.
-        TODO: Redo the gallery to be more mobile friendly.
-                []]]]]]]]]-] 90% done.
-        TODO: Place buttons at the end of each section if a link is required to jump 
-                to another section.
-                []]]]]]---] 60% done.
-        TODO: Redo the whole fiction section. It's absolute garbage. The theme is off 
-                and it just looks bad, so so bad.
-                []]]]-----] 40% done.
-
-    -->
-    <!-- -------------------------- End of TODO LIST --------------------------- -->
-
-
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                               FIXME LIST                                -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!--
-
-        FIXME: Create and embed favicon.
-
-    -->
-    <!-- -------------------------- End of FIXME list -------------------------- -->
-
-<body onload="onLoad()">
+<body onload="onLoad()" class="w3-ios-background">
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                      Responsive Nav Bar                                 -->
     <!-- ----------------------------------------------------------------------- -->
 
-        <div class="nav" id="myNav">
-            <a href="#home" alt="Home Button. Doesn't do much. But it's there.">Home</a> 
-            <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">Blog</a>
-            <a href="/pgs/photos.html" alt="Nifty Photos I've made.">Photos</a>
-            <a href="/pgs/fict.html" alt="A collection of my fiction writing.">Fiction</a>
+        <div class="nav w3-bar-item">
+            
+            <a href="#home" alt="Home Button. Doesn't do much. But it's there.">
+                <div class="w3-bar-item ">Home</div>
+            </a>
+            
+            <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">
+                <div class="w3-bar-item ">Blog</div>
+            </a>
+            
+            <a href="/lib/racgit/pgs/photos.html" alt="Nifty Photos I've made.">
+                <div class="w3-bar-item ">Photos</div>
+            </a>
+            
+            <a href="/lib/racgit/pgs/fict.html" alt="A collection of my fiction writing.">
+                <div class="w3-bar-item ">Fiction</div>
+            </a>
+            
+            <a href="/lib/racgit/pgs/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy.">
+                <div class="w3-bar-item ">CS Projects</div>
+            </a>
         </div>
     
     <!-- ---------------------------- End of Navbar ---------------------------- -->
@@ -81,63 +68,128 @@
 
     <!-- ----------------------------- Cover Photo ----------------------------- -->
       
-        <div>
-           <img class="cover_photo" src="/media/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina.">
-           <p class="caption">Corpus Christi Marina, Corpus Christi Texas, 2017.</p>
+        <div class="w3-display-container">
+            <img class="w3-image" style="width: 100%;" src="/lib/racgit/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina.">
+            <p class="caption w3-ios-background">Corpus Christi Marina, Corpus Christi Texas, 2017.</p>
         </div>
 
-    <!-- ------------------- Information Columns and Content ------------------- -->
 
-        <div class="card_grid">
 
-                <div class="column1">
-                    <div id="about" class="content">
-                        <h2>About</h2>
-                        <p>
-                            I'm a local area climber who also dabbles in code development, writing short fiction, photographic image creation and occasionally painting.
-                        </p>
-                        <p> <!-- Include a small snippet of each aspect of your hobbies -->
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat mollitia minima facere nisi earum sapiente magnam, reprehenderit at minus praesentium consequatur sit, repellat optio aliquam dolore odio tenetur? Minus, cupiditate.
-                        </p>
-                    </div>
-                </div> 
+    <!-- ------------------------------ Body Copy ----------------------------- -->
+
+        <div class="w3-row ">
             
-                <div class="column1">
-                    <div id="fiction" class="content">
-                        <h2>Fiction</h2>
-                        <p>Thousands of trees have lost their lives needlessly for me.<br>
-                        <p>Or at least you'd believe it had you known me at the time I first started writing. So, so many years ago all thanks to MTv and Billy Corgan. More specifically the <em>Mellon Collie and the Infinite Sadness</em> album.<br>
-                        <p>There was just something about hearing it on MTv late in 1995 that opened the magical box. I clearly remember sitting in Social Studies and ripping off <em>Bullet With Butterfly Wings</em>. Oh what trash ensued.<br>
-                        <p>Hopefully the things you read here will be marginally better than that.<br></p>
-                        <br>
-                        <a href="/pgs/fict.html"><button>Read More...</button></a>
-                    </div>
+            <div class="w3-col l6">
+                
+                <div id="about" class="content">
+                    
+                    <h2>About</h2>
+                    
+                    <p>
+                        I'm a local area climber who also dabbles in code development, writing short fiction, photographic image
+                        creation and occasionally painting.
+                    </p>
+                    
+                    <!-- <button onclick="w3.hide('#more')">Learn More...</button>
+                    
+                    <div id="more">
+                        <p>
+                            Awards and Achievements
+                            Editor-in-chief:
+                            NTCC Eagle
+                            Acheivements:Took a small group of writers and expanded both the writer base and scope of reporting. Full redesigned
+                            from the ground up. Elevated the paper too one in which design and reporting were unmatched.
+                            
+                            Assistant Concertmaster:
+                            NTCC Strings
+                            Founding member for NTCC Strings. I came in as an assistant concertmaster and soloist.
+                            
+                            2nd place Ad Design
+                            Fullpage spread for Library
+                            
+                            3rd place Editorial Opinion
+                            Obama Administration
+                            
+                            3rd place Page Design
+                            Double-truck layout for Regional Rodeo
+                            
+                            Numerous sports photogaraphy awards
+                            
+                            AAS Journalism and Music - Northeast Texas Community College
+                            
+                            BFA Cinematography - Stephen F Austin State University
+                            Student Films:
+                            Core (2011)- Writer/Director/Sound Design
+                            Cricket (2010) - Director of Photography/Writer
+                            Zombie Fiction (2009)- Production Editor/Boom Op/Actor
+                            Christmas with the Dead (2012) - SFX/Production Design
+                            
+                            
+                            Certificate in Constitutional Law - Penn State Law
+                            Instructors:
+                            S. Balganesh
+                            S. Morse
+                            T. Ruger
+                            T. Wilkinson-Ryan
+                            T. B. Wolff
+                            
+                            Multi-instrumentalist
+                            Guitar - 20+ yrs
+                            Violin - 2+ yrs
+                            Percussion - 5+ yrs
+                            Brass - 3+ yrs
+                        </p>
+                    </div>-->
+                
                 </div>
             
+            </div>
+            
+            <div class="w3-col l6">
+                
+                <div id="fiction" class="content">
+                    
+                    <h2>Fiction</h2>
+                    
+                    <p>Thousands of trees have lost their lives needlessly for me.<br>
+                    
+                        <p>Or at least you'd believe it had you known me at the time I first started writing. So, so many
+                        years ago all thanks to MTv and Billy Corgan. More specifically the <em>Mellon Collie and the Infinite
+                            Sadness</em> album.<br>
+                    
+                            <p>There was just something about hearing it on MTv late in 1995 that opened the magical box. I
+                        clearly remember sitting in Social Studies and ripping off <em>Bullet With Butterfly Wings</em>. Oh what trash
+                        ensued.<br>
+                    
+                        <p>Hopefully the things you read here will be marginally better than that.<br></p>
+                    
+                        <br>
+                    
+                        <a href="/pgs/fict.html"><div class="w3-button w3-ios-blue w3-round">Read More...</div></a>
+                
+                    </div>
+            
+                </div>
+            </div>
         </div>
-
-    <!-- --------------- End of Information Columns and Content ---------------- -->
-        
+  
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 Footer                                  -->
     <!-- ----------------------------------------------------------------------- -->
 
-        <div class="footer">
+        <div class="w3-center">
             <p>Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved</p>
         </div>
 
     <!-- ------------------------ End of Footer Content ------------------------ -->
 
 
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                        External Javascript files                        -->
-    <!-- ----------------------------------------------------------------------- -->
+    <!-- ------------------------------ js files ------------------------------- -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="scripts/action.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-    <!-- --------------------- End of External Javascript ---------------------- -->
+
 
 </body>
 </html>

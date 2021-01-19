@@ -12,86 +12,13 @@
 /* ----------------------------- End Root Styles ---------------------------- */
 
 
-/* -------------------------------------------------------------------------- */
-/*              @media calls for Responsive Design and Attributes             */
-/* -------------------------------------------------------------------------- */
-
-@media screen and (max-width:768px) { /* All CSS attribute changes for tablet. */
-       
-    h1 {
-        font-size:2rem;
-    }
-
-    h2 {
-        font-size:1rem;
-    }
-
-    h3 b {
-        font-size: 1rem;
-    }
-
-    .card_grid { 
-        display: grid;
-        grid-gap: .25rem;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        padding: .25rem;
-    }
-
-    #about {
-        height: 240px;
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
-
-    #fiction {
-        grid-column: 1/2;
-        grid-row: 2/4;
-    }
-}
-        /* Why doesn't this media call work? */
-@media screen and (max-width: 425px) { /* All CSS attributes for handheld. */
-
-    h1{
-        font-size:1rem;
-    }
-
-    h2 {
-        font-size:.5rem;
-    }
-    
-    h3 b {
-        font-size: .25rem;
-    }
-
-    .card_grid { 
-        width: 100%;
-        padding: .25rem;
-    }
-
-    .column1 {
-        width: 100%;
-        padding: 0;
-}
-
-    #about {
-        height: 240px;
-    }
-
-
-}
-
-/* --------------------------- End of @media calls -------------------------- */
-
 
 /* -------------------------------------------------------------------------- */
 /*                            Universal Tag Styles                            */
 /* -------------------------------------------------------------------------- */
 
 * {
-    background-color: #055887;
-    scrollbar-width: none;
-    padding: 0;
+    padding: 0.25em;
     margin: 0;
     border: 0;
 }
@@ -105,38 +32,13 @@ h2 {
     font-family: 'Poiret One' sans-serif;
     text-align: left;
     font-size: 2rem;
-    color:#ffffff;
+
 }
 
 h3 b {
     font-family: 'Poiret One' sans-serif;
     font-size: 1.28rem;
-    color: white;
-}
 
-ul {
-    font-family: 'Open Sans',sans-serif;
-    color: white;
-    text-align: justify;
-    font-size: 1.28rem;
-    list-style-type: none;   
-} 
-
-li {
-    font-family: 'Open Sans',sans-serif;
-    color: #f5cc9f;
-    text-align: justify;
-    font-size: 1.28rem;
-    list-style-type: none;   
-} 
-
-p {
-    font-family: 'Open Sans',sans-serif;
-    color: white;
-    text-align: justify;
-    font-size: 1.28rem;
-    list-style-type: none;    
-    text-indent: 2em;
 }
 
 /* ------------------------- End Universal Grab-bag ------------------------- */
@@ -147,28 +49,23 @@ p {
 /* -------------------------------------------------------------------------- */
 
 .nav {
-    background-color: inherit;
     font-family: 'Poiret One';
     overflow: hidden;
 }
 
 .nav a {
     float: left;
-    display: block;
-    color: white;
     text-align: center;
-    padding: 0;
     margin: .5em;
     text-decoration: none;
     font-size: xx-large;
 }
 
 .nav a:hover {
-    color: #f5cc9f;
-    text-decoration: none;
-
+    color: #34aadc;
+    border-bottom: olive;
+    border-width: 3px;
 }
-
 
 
 /* ---------------------- End Responsive NavBar Styles ---------------------- */
@@ -182,71 +79,10 @@ p {
     font-size:small;
     text-align: center;
 }
+
 .cover_photo { /* Banner cover photo */
     object-fit: cover; 
     width: 100%;
 }
 
-.card_grid { /* Card Grid Controls */
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
-}
 
-.column1 {
-    padding: 0;
-}
-
-.content {
-    line-height: 2em;
-    font-size: 14px;
-}
-
-.li1 { /* A fake paragraph class that mimics how the paragraph would be normally laid out */
-    text-indent: 2em;
-    line-height: 2.5em;
-}
-
-#about {
-    height: 240px;
-    grid-column: 1/2;
-    grid-row: 1/3;
-}
-
-#fiction {
-    grid-column: 1/2;
-    grid-row: 2/4;
-}
-
-.row:after { 
-    content:"";
-    display:table;
-    clear:both;
-}
-
-
-/* --------------------- End of Info Column and Content --------------------- */
-
-
-/* -------------------------------------------------------------------------- */
-/*                                Footer Style                                */
-/* -------------------------------------------------------------------------- */
-
-.footer {
-    display: grid;
-    grid-template-columns: (1fr);
-    text-align:center; 
-    font-family: 'Poiret One', sans-serif; 
-    color: white; 
-    height:0;
-    margin-left: auto; 
-    margin-right: auto;
-    padding:2em;
-}
-
-.footer p {
-    text-align: center;
-}
-
-/* ---------------------------- End Footer Styles --------------------------- */
