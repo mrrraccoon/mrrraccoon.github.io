@@ -31,15 +31,15 @@
 </head>
 
 
-<body class="w3-ios-background">
+<body class="w3-ios-grey">
     
     <!-- ----------------------------------------------------------------------- -->
     <!--                      Responsive Nav Bar                                 -->
     <!-- ----------------------------------------------------------------------- -->
     
-            <div class="nav w3-bar-item">
+        <div class="nav w3-bar-item">
             
-            <a href="#home" alt="Home Button. Doesn't do much. But it's there.">
+            <a href="/index.html" alt="Home Button. Doesn't do much. But it's there.">
                 <div class="w3-bar-item ">Home</div>
             </a>
             
@@ -51,43 +51,63 @@
                 <div class="w3-bar-item ">Photos</div>
             </a>-->
             
-            <a href="/pgs/fict.html" alt="A collection of my fiction writing.">
+            <a href="/lib/racgit/pgs/fict.html" alt="A collection of my fiction writing.">
                 <div class="w3-bar-item ">Fiction</div>
             </a>
             
-            <a href="/lib/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy.">
+            <a href="/lib/racgit/pgs/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy.">
                 <div class="w3-bar-item ">CS Projects</div>
             </a>
-            </div>
+        </div>
     
     <!-- ---------------------------- End of Navbar ---------------------------- -->
 
     <!-- -------------------------- new gallery code --------------------------- -->
 
-    <div class="w3-content" style="max-width:1200px">
-    <img class="mySlides" src="/lib/racgit/gallery_images/caterpillars.jpg" style="width:100%;display:none">
-    <img class="mySlides" src="/lib/racgit/gallery_images/gallery_books__mount_vernon.jpg" style="width:100%">
-    <img class="mySlides" src="/lib/racgit/gallery_images/stainglass_window__franklin_co.jpg" style="height:812px;display:none">
+    <div class="w3-content" style="max-width:768px">
+        
+        <img class="mySlides" src="/lib/racgit/gallery_images/roadside__2005.jpg" style="height:812px;display:none;margin-left:auto;margin-right:auto;"><!-- 01-->
+
+        <img class="mySlides" src="/lib/racgit/gallery_images/rail_yard__2005.jpg" style="width:100%;display:none;margin-left:auto;margin-right:auto;"> <!-- 02 -->
+        
+        <img class="mySlides" src="/lib/racgit/gallery_images/gallery_books__mount_vernon.jpg" style="width:100%;display:none;margin-left:auto;margin-right:auto;"> <!-- 03 -->
+        
+        <img class="mySlides" src="/lib/racgit/gallery_images/stainglass_window__franklin_co.jpg" style="height:812px;display:none;margin-left:auto;margin-right:auto;"> <!-- 04 -->
+
+        <img class="mySlides" src="/lib/racgit/gallery_images/gone.jpg" style="width:100%;display:none;margin-left:auto;margin-right:auto;"> <!-- 05 -->
+
+        <img class="mySlides" src="/lib/racgit/gallery_images/metal_box__pond.jpg" style="height:812px;display:none;margin-left:auto;margin-right:auto;"> <!-- 06 -->
+
+        <img class="mySlides" src="/lib/racgit/gallery_images/mono_chrysanthemum.jpg" style="height:812px;display:none;margin-left:auto;margin-right:auto;"> <!-- 07 -->
 
     <div class="w3-row-padding w3-section">
         
-        <div class="w3-col s4"> <!-- Caterpillars-->
-            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/caterpillars.jpg" style="width:100%;cursor:pointer"
-                onclick="currentDiv(1)">
-        </div>
-        
-        <div class="w3-col s4"> <!-- Gallery Books -->
-            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/gallery_books__mount_vernon.jpg" style="width:100%;cursor:pointer"
-                onclick="currentDiv(2)">
-        </div>
-        
-        <div class="w3-col s4"> 
-            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/stainglass_window__franklin_co.jpg" style="width:100%;cursor:pointer"
-                onclick="currentDiv(3)">
+        <div class="w3-col s4"> <!-- Rail Yard-->
+            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/roadside__2005.jpg" style="width:200px;height:200px;overflow:hidden;margin:0px0px0px0px;cursor: pointer;" onclick="currentDiv(1)">
         </div>
 
-        <div class="w3-col s4"> <!-- clone -->
-            <img class="demo w3-opacity w3-hover-opacity-off" src="url" style="width:100%;cursor:pointer" onclick="currentDiv(#)">
+        <div class="w3-col s4"> <!-- Roadside -->
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/rail_yard__2005.jpg" style="width:200px;height:200px;overflow:hidden;margin:0px0px0px0px;cursor: pointer;" onclick="currentDiv(2)">
+                </div>
+        
+        <div class="w3-col s4"> <!-- Gallery Books -->
+            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/gallery_books__mount_vernon.jpg" style="width:200px;height:200px;overflow:hidden;margin:0px0px0px0px;cursor: pointer;" onclick="currentDiv(3)">
+        </div>
+        
+        <div class="w3-col s4"> <!-- Stainglass -->
+            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/stainglass_window__franklin_co.jpg" style="width:200px;height:200px;overflow:hidden;margin:0px0px0px0px;cursor: pointer;" onclick="currentDiv(4)">
+        </div>
+
+        <div class="w3-col s4"> <!-- Gone -->
+            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/gone.jpg" style="width:200px;height:200px;overflow:hidden;margin:0px0px0px0px;cursor: pointer;" onclick="currentDiv(5)">
+        </div>
+
+        <div class="w3-col s4"><!-- Metal Box -->
+            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/metal_box__pond.jpg" style="width:200px;height:200px;overflow:hidden;margin:0px0px0px0px;cursor: pointer;" onclick="currentDiv(6)">
+        </div>
+        
+        <div class="w3-col s4"><!-- Mono Chrysanthemums -->
+            <img class="demo w3-opacity w3-hover-opacity-off" src="/lib/racgit/gallery_images/mono_chrysanthemum.jpg" style="width:200px;height:200px;overflow:hidden;margin:0px0px0px0px;cursor: pointer;" onclick="currentDiv(7)">
         </div>
 
     </div>
@@ -117,29 +137,6 @@
         }
     </script>
 
-    <!-- ----------------------- old photo gallery code ------------------------ -->
-
-    <!--<div class="photo_grid w3-row">
-        
-        <div class="w3-col l6 m4">
-            <div class="w3-card-6">
-                <img src="/lib/racgit/gallery_images/caterpillars.jpg">
-            </div>
-        </div>
-        
-        <div class="w3-col 16 m4">
-
-        </div>
-        <div class="w3-image"><img src="/lib/racgit/gallery_images/gone.jpg"></div>
-        <div class="w3-image"><img src="/lib/racgit/gallery_images/long_exposure_branch_in_water.jpg"></div>
-        <div class="w3-image"><img src="/lib/racgit/gallery_images/metal_box__pond.jpg"></div>
-        <div class="w3-image"><img src="/lib/racgit/gallery_images/mono_chrysanthemum.jpg"></div>
-        <div class="w3-image"><img src="/lib/racgit/gallery_images/rail_yard__2005.jpg"></div>
-        <div class="w3-image"><img src="/lib/racgit/gallery_images/long_exposure_no__1.jpg"></div>
-        <div class="w3-image"><img src="/lib/racgit/gallery_images/white_flowers.jpg"></div>
-
-    </div>-->
-
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 Footer                                  -->
     <!-- ----------------------------------------------------------------------- -->
@@ -155,7 +152,7 @@
     <!--                        External Javascript files                        -->
     <!-- ----------------------------------------------------------------------- -->
         <script src="https://www.w3schools.com/lib/w3.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     
     <!-- --------------------- End of External Javascript ---------------------- -->
 
