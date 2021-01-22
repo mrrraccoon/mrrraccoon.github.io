@@ -7,164 +7,80 @@
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poiret One', cursive;
-    scrollbar-width: none;
 }
 
 /* ----------------------------- End Root Styles ---------------------------- */
+
 
 
 /* -------------------------------------------------------------------------- */
 /*                            Universal Tag Styles                            */
 /* -------------------------------------------------------------------------- */
 
-body {
+* {
+    padding: 0.25em;
     margin: 0;
-    padding: 0;
     border: 0;
 }
 
- a {
-     font-family: 'Poiret One', cursive;
-     color: white; 
-     margin:.5em; 
-     text-decoration: none;
+h1 {
+    font-family: 'Poiret One', sans-serif; 
+    font-size: 3rem;
 }
- 
- a:hover {
-     color:#237297;  
- }
+
+h2 {
+    font-family: 'Poiret One' sans-serif;
+    text-align: left;
+    font-size: 2rem;
+
+}
+
+h3 b {
+    font-family: 'Poiret One' sans-serif;
+    font-size: 1.28rem;
+
+}
 
 /* ------------------------- End Universal Grab-bag ------------------------- */
 
 
 /* -------------------------------------------------------------------------- */
-/*                                NavBar Styles                               */
+/*                          Responsive NavBar Styles                          */
 /* -------------------------------------------------------------------------- */
 
 .nav {
-    background: white;
-    padding: 2em;
-    color: #000;
-    text-align: right;
-    height: 50px;
-    font-size: 24px;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One';
+    overflow: hidden;
 }
 
 .nav a {
     float: left;
-    display: block;
-    color: #055887;
     text-align: center;
-    padding: 0;
     margin: .5em;
     text-decoration: none;
     font-size: xx-large;
 }
 
 .nav a:hover {
-    color: #f5cc9f;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px #000000;
+    color: #34aadc;
+    border-bottom: olive;
+    border-width: 3px;
 }
 
 
-/* ---------------------------- End Navbar Styles --------------------------- */
+/* ---------------------- End Responsive NavBar Styles ---------------------- */
 
-
-.title {
-    background: #237297;
-    color: #ffffff;
-    text-shadow: 3px 3px 8px #000000;
-    font-family: 'Poiret One', cursive; 
-    font-size: 48px; 
-    text-align: center; 
-    width: 1fr; 
-    margin: 0; 
-    padding-top:50px;
-    height: 150px;
-}
 
 /* -------------------------------------------------------------------------- */
-/*                               Content Styles                               */
+/*                    Information Column and Content Styles                   */
 /* -------------------------------------------------------------------------- */
 
-.content {
-
-    display: grid;
-    padding: 2rem;
-    width: 1fr;
-    grid-template-columns: 50% 1fr;
-    grid-template-rows: auto;
-    grid-gap: 5em;
-    text-align: justify;
+.caption {
+    font-size:small;
+    text-align: center;
 }
 
-.columnLeft {
+.cover_photo { /* Banner cover photo */
+    object-fit: cover; 
     width: 100%;
-    height: 100%;
-    grid-column: 1;
-    grid-row: auto;
 }
-
-.columnRight {
-    width: 100%;
-    height: 100%;
-    grid-column: 2;
-    grid-row: auto;
-}
-
-.columnPhoto {
-    width: 1fr;
-    grid-column: 2;
-    grid-row: auto;
-}
-
-.excerpt {
-    color:#237297;
-}
-
-p {
-    width:100%;
-    line-height: 2rem;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    text-indent: 3ch;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-h2 {
-    font-size:36px;
-    font-style: italic;
-    text-align: left;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border: black solid 2px;
-    overflow: hidden;
-}
-
-/* --------------------------- End Content Styles --------------------------- */
-
-
-/* -------------------------------------------------------------------------- */
-/*                                Footer Styles                               */
-/* -------------------------------------------------------------------------- */
-
-.footer {
-    display: grid;
-    grid-template-columns: (1fr);
-    text-align:center; 
-    font-family: 'Poiret One', sans-serif;
-    color: black; 
-    height:50px;
-    margin-left: auto; 
-    margin-right: auto;
-    padding:2em;
-}
-
-/* ---------------------------- End Footer Styles --------------------------- */

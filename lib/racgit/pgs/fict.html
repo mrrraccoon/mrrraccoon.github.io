@@ -1,79 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="http://example.com/favicon.ico">
 
-        <title>T Simpson Does Things | Fiction</title>
-        
-        <!-- ----------------------------------------------------------------------- -->
-        <!--                      External Viewport Stylesheets                      -->
-        <!-- ----------------------------------------------------------------------- -->
+    <title>Mr. R Raccoon's Fiction Page </title>
 
-        <link rel="stylesheet" href="/css/fic.css">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                      External Viewport Stylesheets                      -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ---------------------------- w3 school CSS ---------------------------- -->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-ios.css">
+
+    <!-- ----------------------------- Custom CSS ------------------------------ -->
+
+    <link rel="stylesheet" href="/css/styles.css"><!-- Desktop and Main Stylesheet -->
+
+    <!-- ---------------------------- Google Fonts and Font Awesome ------------ -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome-->
+
+    <!-- --------------------- End of External Stylesheets --------------------- -->
+
+
+</head>
+
+<body onload="onLoad()" class="w3-ios-grey">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                      Responsive Nav Bar                                 -->
+    <!-- ----------------------------------------------------------------------- -->
     
-        <!--    External Stylesheets, Frameworks, Link Refs    -->
-
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap" rel="stylesheet"> <!-- Google Fonts -->
-
-
-    </head>
+    <div class="nav w3-bar-item">
+    
+        <a href="/index.html" alt="Home Button. Doesn't do much. But it's there.">
+            <div class="w3-bar-item w3-tooltipl"><b>Home</b></div>
+        </a>
+    
+        <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">
+            <div class="w3-bar-item "><b>Blog</b></div>
+        </a>
+    
+        <a href="/lib/racgit/pgs/photos.html" alt="Nifty Photos I've made.">
+            <div class="w3-bar-item "><b>Photos</b></div>
+        </a>
+    
+        <a href="/lib/racgit/pgs/cs.html"
+            alt="A page of other computer science based projects I've prototyped and made. Enjoy.">
+            <div class="w3-bar-item "><b>CS Projects</b></div>
+        </a>
+    </div>
 
     <!-- ----------------------------------------------------------------------- -->
-    <!--                                TODO LIST                                -->
+    <!--                 Long Fiction Short Description Sections                 -->
     <!-- ----------------------------------------------------------------------- -->
-    <!--
 
-        TODO: Format A Burning At Clear Creek for the web. 
-        TODO: Rethink the navbar font choice and face.
-
-    -->
-    <!-- -------------------------- End of TODO List --------------------------- -->
-
-<body>
-
-
-        <div class="nav" id="myNav"> 
-                <a href="/index.html">Home</a>
-                <a href="#">About</a>
-                <a href="http://withoutaconclusion.blogspot.com">Blog</a>        
-        </div>
-        
-<!-- ----------------------------------------------------------------------- -->
-<!--                       Fiction Description Section                       -->
-<!-- ----------------------------------------------------------------------- -->
+        <div class="w3-container w3-center"><h1>Fiction</h1></div>
         
         <div class="content">
-            <div class="columnLeft">
-                <h2>Welcome to the Fiction Portal</h2>
-            </div>
-
-            <div class="columnPhoto">
-                <div><img src="/media/gallery_images/gallery_books__mount_vernon.jpg"></div>
-            </div>
-        </div>
-
-<!-- ----------------------------------------------------------------------- -->
-<!--                 Long Fiction Short Description Sections                 -->
-<!-- ----------------------------------------------------------------------- -->
-
-        <div class="title">Fiction</div>
-        <div class="content">
-            
-            <div class="columnLeft">
+            <div class="w3-col l6">
                 <h2>The Mobian Saga</h2>
                 <p>One woman's journey to the brink of her humanity as universal machinations work against her every step as the
                     Solar System falls to the brinks of war.</p>
                 <p>Will Cemal Tanzari fall to the devices of a corrupt brotherhood bent on planetary starvation and genocide? Or
                     will she muster the strength to fight on and unravel The Brotherhood of Fire's devious plans for solar civil
                     war.</p>
-                <p class="excerpt"><button>Read An Except...</button></p>
+                <div class="w3-button w3-ios-light-grey w3-round w3-hover-blue">Read an excerpt</div>
             
              </div>
             
-            <div class="columnRight">
+            <div class="w3-col l6">
                 <h2>The Bone Creek Collection</h2>
                 <p>Set in the 1860-70s, The Bone Creek Collection follows Donahue, an aging cowboy in the rough and tumble town
                     of Arizona City (Yuma, AZ).<br>
@@ -82,7 +87,7 @@
                 <p>Can he maintain a life of peace or will the harbinger of bad fates call into the darkness for Donahue to go
                     the way of the buffalo?
                 </p>
-                <p class="excerpt"><button>Read An Except...</button></p>
+                <div class="w3-button w3-ios-light-grey w3-round w3-hover-blue">Read an excerpt</div>
             
             </div>
         </div>
@@ -95,32 +100,37 @@
     <!-- ----------------------------------------------------------------------- -->
 
 
-        <div class="title" >Short Fiction</div>
-        <div class="content">
-           
-            <div class="columnLeft">
-                <h2>Oram</h2>
+        <div class="w3-container w3-center"><h1>Short Fiction</div>
+        
+            <div class="container">
+
+            <div class="w3-col l4">
+                <h3>Oram</h3>
                 <p>Just before a long walk a man questions his existence inside a mental institute wing. </p>
-                <p><a href="text/oram.html"><button>Read More...</button></a></p>
+                <a href="text/oram.html"><div class="w3-button w3-ios-light-grey w3-round w3-hover-blue">Read an excerpt</div></a></p>
             </div>
 
-            <div class="columnRight">
-                <h2>A Burning At Clear Creek</h2>
+            <div class="w3-col l4">
+                <h3>A Burning At Clear Creek</h3>
                 <p>The Burning of a country church. The passions of young women are dug from the ashes. Will the revelation set them free or will it damn them to a tragic future?</p>
-                <p style="color:#237297;"><a href="text/clearcreek.html"><button>Read More...</button></a></p>
+                <a href="text/clearcreek.html"><div class="w3-button w3-ios-light-grey w3-round w3-hover-blue">Read an excerpt</div></a>
             </div>
 
-            <div class="columnLeft">
-                <h2>Lives, Abridged...</h2>
+            <div class="w3-col l4">
+                <h3>Lives, Abridged...</h3>
                 <p>In a vignette of Cemal Tanzari's life before The Claradora we see her reality in a sliver of this microcosm view.</p>
-                <p style="color:#237297;"><a href="text/lives.html"><button>Read More...</button></a></p>
+                <a href="text/lives.html"><div class="w3-button w3-ios-light-grey w3-round w3-hover-blue">Read an excerpt</div></a>
             </div>
         
+            </div>
+
         </div>
 
 <!-- --------------------------- footer section ---------------------------- -->
+        <div class="w3-container w3-center">
         <div class="footer">
             <p style="text-align: center ">Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved</p>
+        </div>
         </div>
 <!-- ---------------------------- Font imports ----------------------------- -->
 
