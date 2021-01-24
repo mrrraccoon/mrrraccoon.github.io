@@ -24,7 +24,8 @@
     <!-- ---------------------------- Google Fonts ----------------------------- -->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap"><!--  Google Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/2fc6a1ba93.js" crossorigin="anonymous"></script><!-- Font Awesome-->
+
     
     <!-- --------------------- End of External Stylesheets --------------------- -->
 
@@ -38,29 +39,30 @@
     <!--                      Responsive Nav Bar                                 -->
     <!-- ----------------------------------------------------------------------- -->
     
-        <div class="nav w3-bar-item">
-            
-            <a href="/index.html" alt="Home Button. Doesn't do much. But it's there.">
-                <div class="w3-bar-item ">Home</div>
-            </a>
-            
-            <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">
-                <div class="w3-bar-item ">Blog</div>
-            </a>
-            
-            <!--<a href="/pgs/photos.html" alt="Nifty Photos I've made.">
-                <div class="w3-bar-item ">Photos</div>
-            </a>-->
-            
-            <a href="/lib/racgit/pgs/fict.html" alt="A collection of my fiction writing.">
-                <div class="w3-bar-item ">Fiction</div>
-            </a>
-            
-            <a href="/lib/racgit/pgs/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy.">
-                <div class="w3-bar-item ">CS Projects</div>
-            </a>
-        </div>
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-ios-grey" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large w3-ios-grey">&times;</button>
+        <a href="/index.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-home fa-sm"></i> Home</a>
+        <a href="http://withoutaconclusion.blogspot.com" class="w3-bar-item w3-button w3-ios-grey"><i class="fab fa-blogger fa-sm"></i> Blog</a>
+        <a href="/lib/racgit/pgs/photos.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-camera-retro fa-sm"></i> Photos</a>
+        <a href="/lib/racgit/pgs/fict.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-robot fa-sm"></i></i> Fiction</a>
+        <a href="/lib/racgit/pgs/cs.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-laptop-code fa-sm"></i> CS Projects</a>
+    </div>
     
+    <!-- Page Content -->
+    <div>
+        <button class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
+    </div>
+    
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
     <!-- ---------------------------- End of Navbar ---------------------------- -->
 
     <!-- -------------------------- new gallery code --------------------------- -->

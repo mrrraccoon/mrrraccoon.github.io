@@ -37,28 +37,54 @@
     <!--                      Responsive Nav Bar                                 -->
     <!-- ----------------------------------------------------------------------- -->
 
-        <div class="nav w3-bar-item">
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-ios-grey" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large w3-ios-grey">&times;</button>
+        <a href="/index.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-home fa-sm"></i> Home</a>
+        <a href="http://withoutaconclusion.blogspot.com" class="w3-bar-item w3-button w3-ios-grey"><i class="fab fa-blogger fa-sm"></i> Blog</a>
+        <a href="/lib/racgit/pgs/photos.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-camera-retro fa-sm"></i> Photos</a>
+        <a href="/lib/racgit/pgs/fict.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-robot fa-sm"></i></i> Fiction</a>
+        <a href="/lib/racgit/pgs/cs.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-laptop-code fa-sm"></i> CS Projects</a>
+    </div>
+    
+    <!-- Page Content -->
+    <div>
+        <button class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
+    </div>
+    
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+
+        <!--<div class="nav w3-bar-item">
             
             <a href="#home" alt="Home Button. Doesn't do much. But it's there.">
-                <div class="w3-bar-item w3-tooltipl"><b>Home</b><i class="fas fa-home"></i></div>
+                <div class="w3-bar-item w3-tooltipl"><b>Home</b><i class="fas fa-home fa-sm"></i></div>
             </a>
             
             <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">
-                <div class="w3-bar-item "><b>Blog</b><i class="fab fa-blogger"></i></div>
+                <div class="w3-bar-item "><b>Blog</b><i class="fab fa-blogger fa-sm"></i></div>
             </a>
             
             <a href="/lib/racgit/pgs/photos.html" alt="Nifty Photos I've made.">
-                <div class="w3-bar-item "><b>Photos</b><i class="fas fa-camera-retro"></i></div>
+                <div class="w3-bar-item "><b>Photos</b><i class="fas fa-camera-retro fa-sm"></i></div>
             </a>
             
             <a href="/lib/racgit/pgs/fict.html" alt="A collection of my fiction writing.">
-                <div class="w3-bar-item "><b>Fiction</b><i class="fas fa-robot"></i></div>
+                <div class="w3-bar-item "><b>Fiction</b><i class="fas fa-robot fa-sm"></i></div>
             </a>
             
             <a href="/lib/racgit/pgs/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy.">
-                <div class="w3-bar-item "><b>CS Projects</b><i class="fas fa-laptop-code"></i></div>
+                <div class="w3-bar-item "><b>CS Projects</b><i class="fas fa-laptop-code fa-sm"></i></div>
             </a>
-        </div>
+        </div>-->
     
     <!-- ---------------------------- End of Navbar ---------------------------- -->
 
@@ -70,7 +96,7 @@
     <!-- ----------------------------- Cover Photo ----------------------------- -->
       
         <div class="w3-display-container">
-            <img class="w3-image" style="width: 100%;" src="/lib/racgit/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina.">
+            <img class="w3-image" style="width: 100%; " src="/lib/racgit/gallery_images/IMG_1696.jpg" alt="A wide view of the Corpus Christi Marina.">
             <p class="caption">Corpus Christi Marina, Corpus Christi Texas, 2017.</p>
         </div>
 
