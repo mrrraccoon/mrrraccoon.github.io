@@ -38,18 +38,23 @@
     <!-- ----------------------------------------------------------------------- -->
 
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-border-right w3-ios-grey" style="display:none" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-large w3-ios-grey">&times;</button>
-        <a href="/index.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-home fa-sm"></i> Home</a>
-        <a href="http://withoutaconclusion.blogspot.com" class="w3-bar-item w3-button w3-ios-grey"><i class="fab fa-blogger fa-sm"></i> Blog</a>
-        <a href="/lib/racgit/pgs/photos.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-camera-retro fa-sm"></i> Photos</a>
-        <a href="/lib/racgit/pgs/fict.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-robot fa-sm"></i></i> Fiction</a>
-        <a href="/lib/racgit/pgs/cs.html" class="w3-bar-item w3-button w3-ios-grey"><i class="fas fa-laptop-code fa-sm"></i> CS Projects</a>
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-ios-grey " style="display:none; background-color: rgba(142,142,147, 0.7);" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large w3-ios-grey w3-opacity-min"><i class="fas fa-minus w3-xlarge" style="background-color: rgba(142, 142, 147, 9);"></i></button> <!-- - button -->
+        <a href="/index.html" alt="Home Button. Doesn't do much. But it's there." id="w3-btn" class="w3-bar-item w3-button w3-ios-grey w3-bottombar w3-hover-border-orange w3-hover-ios-grey">
+            <i class="fas fa-home fa-sm"></i> Home</a>
+        <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion." class="w3-bar-item w3-button w3-ios-grey">
+            <i class="fab fa-blogger fa-sm"></i> Blog</a>
+        <a href="/lib/racgit/pgs/photos.html" alt="Nifty Photos I've made." class="w3-bar-item w3-button w3-ios-grey">
+            <i class="fas fa-camera-retro fa-sm"></i> Photos</a>
+        <a href="/lib/racgit/pgs/fict.html" alt="A collection of my fiction writing." class="w3-bar-item w3-button w3-ios-grey">
+            <i class="fas fa-robot fa-sm"></i></i> Fiction</a>
+        <a href="/lib/racgit/pgs/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy." class="w3-bar-item w3-button w3-ios-grey" style="width:100%;">
+            <i class="fas fa-laptop-code fa-sm"></i> CS Projects</a>
     </div>
     
     <!-- Page Content -->
     <div>
-        <button class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
+        <button class="w3-button w3-xlarge" onclick="w3_open()"><i class="fas fa-plus"></i> </button> <!-- + Button -->
     </div>
     
     <script>
@@ -62,30 +67,6 @@
         }
     </script>
 
-
-        <!--<div class="nav w3-bar-item">
-            
-            <a href="#home" alt="Home Button. Doesn't do much. But it's there.">
-                <div class="w3-bar-item w3-tooltipl"><b>Home</b><i class="fas fa-home fa-sm"></i></div>
-            </a>
-            
-            <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion.">
-                <div class="w3-bar-item "><b>Blog</b><i class="fab fa-blogger fa-sm"></i></div>
-            </a>
-            
-            <a href="/lib/racgit/pgs/photos.html" alt="Nifty Photos I've made.">
-                <div class="w3-bar-item "><b>Photos</b><i class="fas fa-camera-retro fa-sm"></i></div>
-            </a>
-            
-            <a href="/lib/racgit/pgs/fict.html" alt="A collection of my fiction writing.">
-                <div class="w3-bar-item "><b>Fiction</b><i class="fas fa-robot fa-sm"></i></div>
-            </a>
-            
-            <a href="/lib/racgit/pgs/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy.">
-                <div class="w3-bar-item "><b>CS Projects</b><i class="fas fa-laptop-code fa-sm"></i></div>
-            </a>
-        </div>-->
-    
     <!-- ---------------------------- End of Navbar ---------------------------- -->
 
     
