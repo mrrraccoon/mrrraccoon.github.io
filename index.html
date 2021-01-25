@@ -38,23 +38,34 @@
     <!-- ----------------------------------------------------------------------- -->
 
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-border-right w3-ios-grey " style="display:none; background-color: rgba(142,142,147, 0.7);" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-large w3-ios-grey w3-opacity-min"><i class="fas fa-minus w3-xlarge" style="background-color: rgba(142, 142, 147, 9);"></i></button> <!-- - button -->
-        <a href="/index.html" alt="Home Button. Doesn't do much. But it's there." id="w3-btn" class="w3-bar-item w3-button w3-ios-grey w3-bottombar w3-hover-border-orange w3-hover-ios-grey">
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-ios-grey " style="display:none;" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-xlarge w3-ios-grey w3-opacity-min"><i class="fas fa-minus-circle"></i></button> <!-- - button -->
+        <a href="/index.html" alt="Home Button. Doesn't do much. But it's there." id="w3-btn" class="w3-bar-item w3-button w3-bottombar w3-ios-grey w3-hover-border-blue">
             <i class="fas fa-home fa-sm"></i> Home</a>
-        <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion." class="w3-bar-item w3-button w3-ios-grey">
+        <a href="http://withoutaconclusion.blogspot.com" alt="Link to my external blogger site, Without A Conclusion." class="w3-bar-item w3-button w3-ios-grey w3-bottombar w3-hover-border-blue">
             <i class="fab fa-blogger fa-sm"></i> Blog</a>
-        <a href="/lib/racgit/pgs/photos.html" alt="Nifty Photos I've made." class="w3-bar-item w3-button w3-ios-grey">
+        <a href="/lib/racgit/pgs/photos.html" alt="Nifty Photos I've made." class="w3-bar-item w3-button w3-ios-grey w3-bottombar w3-hover-border-blue">
             <i class="fas fa-camera-retro fa-sm"></i> Photos</a>
-        <a href="/lib/racgit/pgs/fict.html" alt="A collection of my fiction writing." class="w3-bar-item w3-button w3-ios-grey">
-            <i class="fas fa-robot fa-sm"></i></i> Fiction</a>
-        <a href="/lib/racgit/pgs/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy." class="w3-bar-item w3-button w3-ios-grey" style="width:100%;">
+        <a href="/lib/racgit/pgs/fict.html" alt="A collection of my fiction writing." class="w3-bar-item w3-button w3-ios-grey w3-bottombar w3-hover-border-blue">
+            <i class="fas fa-robot fa-sm"></i> Fiction</a>
+        <a href="/lib/racgit/pgs/cs.html" alt="A page of other computer science based projects I've prototyped and made. Enjoy." class="w3-bar-item w3-button w3-ios-grey w3-bottombar w3-hover-border-blue">
             <i class="fas fa-laptop-code fa-sm"></i> CS Projects</a>
+        
+        <br>
+        <div class="w3-panel">
+        Proudly built using:<br>
+            <div class="w3-center w3-xxlarge">
+                <i class="fab fa-github"></i> 
+                <i class="fab fa-html5"></i> 
+                <i class="fab fa-css3-alt"></i> 
+                <i class="fab fa-js-square"></i>
+            </div>
+        </div>
     </div>
     
     <!-- Page Content -->
     <div>
-        <button class="w3-button w3-xlarge" onclick="w3_open()"><i class="fas fa-plus"></i> </button> <!-- + Button -->
+        <button class=" w3-ios-grey w3-xlarge w3-hover-blue" onclick="w3_open()"><i class="fas fa-plus-circle"></i> </button> <!-- + Button -->
     </div>
     
     <script>
@@ -97,7 +108,7 @@
                         I'm a local area climber who also dabbles in writing short fiction, photography, occasionally painting and code development.
                     </p>
                     
-                    <!-- <button onclick="w3.show('#more')>Learn More...</button>
+                    <!-- <button onclick="w3_close()>Learn More...</button>
                     
                     <div id="more">
                         <p>
@@ -158,21 +169,19 @@
                     
                     <h2>Fiction</h2>
                     
-                    <p>Thousands of trees have lost their lives needlessly for me.<br>
+                    <p>Thousands of trees,<br> 
+                        Have lost their lives, <br> 
+                        Needlessly for me.<br></p>
+                    <br>
                     
-                        <p>Or at least you'd believe it had you known me at the time I first started writing. So, so many
-                        years ago all thanks to MTv and Billy Corgan. More specifically the <i>Mellon Collie and the Infinite
-                            Sadness</i> album.<br>
-                    
-                            <p>There was just something about hearing it on MTv late in 1995 that opened the magical box. I
-                        clearly remember sitting in Social Studies and ripping off <i>Bullet With Butterfly Wings</i>. Oh what trash
-                        ensued.<br>
+                    <p>When I first started writing, so, so many years ago it was all thanks to hearing Billy Corgan on MTv late in 1995.<br><br> It opened the magical box.<br><br> I distinctly remember sitting in Social Studies and ripping off <em>Bullet With Butterfly Wings</em>. <br><br>
+                        Oh what trash ensued.<br><br>
                     
                         <p>Hopefully the things you read here will be marginally better than that.<br></p>
                     
                         <br>
                     
-                        <a href="/pgs/fict.html"><div class="w3-button w3-ios-light-grey w3-round w3-hover-blue">Read More...</div></a>
+                        <a href="/lib/racgit/pgs/fict.html"><div class="w3-button w3-ios-light-grey w3-round w3-hover-blue">Read More...</div></a>
                 
                     </div>
             
@@ -186,7 +195,7 @@
     <!-- ----------------------------------------------------------------------- -->
 
         <div class="w3-container w3-center">
-            <p>Copyright &copy; 2020 A Pillaged Trashcan, LLC. All Rights Reserved</p>
+            <p class="w3-center">Copyright &copy; 2020 A Pillaged Trashcan, LLC.<br>All Rights Reserved</p>
         </div>
 
     <!-- ------------------------ End of Footer Content ------------------------ -->

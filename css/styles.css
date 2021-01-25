@@ -41,6 +41,10 @@ h3 b {
 
 }
 
+p {
+    font-size: 16px;
+    text-align: justify !important;
+}
 /* ------------------------- End Universal Grab-bag ------------------------- */
 
 
@@ -85,4 +89,6 @@ h3 b {
     width: 100%;
 }
 
-
+.w3-bottombar {
+    border-bottom:6px solid transparent !important;
+}
