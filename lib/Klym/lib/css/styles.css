@@ -1,0 +1,12 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  border: 0;
+}
+
+p {
+  text-indent: 1rem;
+  padding: .5rem;
+  text-align: justify;
+  font-size: 18px;
+}

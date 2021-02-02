@@ -1,0 +1,61 @@
+body {
+    background-color: #005082;
+    color: #ffffff;
+    margin: 0.5rem;
+    padding: 4px ;
+    border: 0;
+    box-sizing:border-box;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Forum', serif;
+    line-height: 1.5rem;
+}
+
+img {
+    width:100%;
+}
+
+h1 {
+  font-family: 'Forum', serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Forum', sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  width: 50%;
+  margin:4px;
+}
+
+.column_a {
+  grid-area: "column_a";
+  padding-left: 4px;
+  width: 95%;
+}
+
+.column_b {
+  grid-area: "column_b";
+  padding-left: 4px;
+  width: 100;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "column_a column_a"
+  "column_b column_b"
+  ;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
