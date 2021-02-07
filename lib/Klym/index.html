@@ -32,7 +32,7 @@
     <!-- --------------------- End of External Stylesheets --------------------- -->
 
 </head>
-<body class="w3-light-blue" >
+<body class="w3-light-blue" onload="covidbanner();">
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                             Navigation Bar                              -->
@@ -81,6 +81,45 @@
                 <p class="w3-center">No Exceptions. End of Story.</p></h3>
             </div>
         </div>
+
+        <!-- New Code -->
+
+            <div id="covidbanner" class="w3-modal">
+                <!-- id01-->
+                <div class="w3-modal-content w3-card-4">
+                    <!-- Card01 Container-->
+                    <header class="w3-container w3-teal">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-hover-orange w3-display-topright">&times;</span>
+                        <div class="fas fa-shield-virus w3-xxlarge">
+                            <h1>COVID-19 Protocols</h1>
+                        </div>
+                    </header>
+            
+                    <div class="w3-container w3-teal">
+                        <p>A word (other than a pronoun) used to identify any of a class of people, places, or things ( common
+                            noun ), or to name a
+                            particular one of these ( proper noun ).</p>
+                    </div>
+
+            
+                </div>
+            
+                <script> // Click close modal script
+
+                    let modal = document.getElementById('id01');
+
+                    // Close the modal
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            
+            </div>
+
+        <!-- End New Code-->
 </div>    
     <!-- ------------------------- End Advisory Banner ------------------------- -->
     
