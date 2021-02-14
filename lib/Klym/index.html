@@ -34,6 +34,7 @@
 </head>
 <body class="w3-light-blue" onload="covidbanner();">
 
+
     <!-- ----------------------------------------------------------------------- -->
     <!--                             Navigation Bar                              -->
     <!-- ----------------------------------------------------------------------- -->
@@ -72,7 +73,7 @@
 </div>    
 
     <!-- ------------------------ Covid Advisory Banner ------------------------ -->
-        <div class="w3-center w3-padding-top-24">
+       <!-- <div class="w3-center w3-padding-top-24">
             <div class="fas fa-shield-virus w3-xxlarge"><h1>COVID-19 Protocols</h1></div>
             <div class="w3-center">
                 <h3>Please Take Note Of The Following:</h3> 
@@ -80,16 +81,16 @@
                 <p class="w3-center">Masks Must Be OVER The Nose</p> 
                 <p class="w3-center">No Exceptions. End of Story.</p></h3>
             </div>
-        </div>
+        </div> -->
 
-        <!-- New Code -->
+    <!-- ------------------------------ New Code ------------------------------- -->
 
             <div id="covidbanner" class="w3-modal">
                 <!-- id01-->
                 <div class="w3-modal-content w3-card-4">
                     <!-- Card01 Container-->
                     <header class="w3-container w3-teal">
-                        <span onclick="document.getElementById('id01').style.display='none'"
+                        <span onclick="document.getElementById('covidbanner').style.display='none'"
                             class="w3-button w3-hover-orange w3-display-topright">&times;</span>
                         <div class="fas fa-shield-virus w3-xxlarge">
                             <h1>COVID-19 Protocols</h1>
@@ -97,9 +98,11 @@
                     </header>
             
                     <div class="w3-container w3-teal">
-                        <p>A word (other than a pronoun) used to identify any of a class of people, places, or things ( common
-                            noun ), or to name a
-                            particular one of these ( proper noun ).</p>
+                <div class="w3-center"><h3>Please Take Note Of The Following:</h3>
+                <p class="w3-center">Masks Must Be Worn At All Times</p>
+                <p class="w3-center">Masks Must Be OVER The Nose</p>
+                <p class="w3-center">No Exceptions. End of Story.</p>
+                </h3>
                     </div>
 
             
@@ -107,7 +110,7 @@
             
                 <script> // Click close modal script
 
-                    let modal = document.getElementById('id01');
+                    let modal = document.getElementById('covidbanner');
 
                     // Close the modal
                     window.onclick = function (event) {
@@ -115,11 +118,14 @@
                             modal.style.display = "none";
                         }
                     }
+
+                    
                 </script>
             
             </div>
 
-        <!-- End New Code-->
+    <!-- ---------------------------- End New Code ----------------------------- -->
+
 </div>    
     <!-- ------------------------- End Advisory Banner ------------------------- -->
     
