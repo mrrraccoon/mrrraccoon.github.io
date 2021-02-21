@@ -1,3 +1,9 @@
+/* -------------------------------------------------------------------------- */
+/*                                Global Styles                               */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- Global Tags ------------------------------ */
+
 * {
   margin: 0%;
   padding: 0%;
@@ -11,3 +17,33 @@ p {
   font-size: 18px;
 }
 
+/* ----------------------------- Global Classes ----------------------------- */
+
+.bg-slate {
+  background-color: #b5cfd8;
+}
+
+.bg-lgrey {
+  background-color: #e8ecf1;
+}
+
+.bg-dslate {
+  background-color: #7393a7;
+}
+
+.bg-dgrey {
+  background-color: #6c737e;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Local Styles                                */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- Local Tags ------------------------------- */
+.main-bg-image {  
+  width: 100%;
+  
+  background-image: url("/lib/Klym/lib/media/img/bg_main.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
