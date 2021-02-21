@@ -40,10 +40,15 @@ p {
 /* -------------------------------------------------------------------------- */
 
 /* ------------------------------- Local Tags ------------------------------- */
-.main-bg-image {  
-  width: 100%;
+.main-bg-image { 
+  /* z-index controls */ 
+  width:fit-content;
+  position: absolute;
+  z-index: -1;
   
+  /* background image block */  
   background-image: url("/lib/Klym/lib/media/img/bg_main.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
 }
