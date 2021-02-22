@@ -40,22 +40,38 @@ p {
       background-color: rgb(108,115,126);
     }
 
-  /* --------------------------- 50% Opacity Palette -------------------------- */
+  /* ----------------------------- Opacity Palette ---------------------------- */
     
-    .bg-slate-5 { /* Slate */
+    .bg-slate-5 { /* Slate 50*/
       background-color: rgba(181,207,216,0.5);
     }
 
-    .bg-lgrey-5 { /* Light Grey */
+    .bg-slate-9 { /* Slate 90*/
+      background-color: rgba(181,207,216,0.9);
+    }
+
+    .bg-lgrey-5 { /* Light Grey 50 */
       background-color: rgba(232,236,241,0.5);
     }
     
-    .bg-dslate-5 { /* Dark Slate */
+    .bg-lgrey-9 { /* Light Grey 90 */
+      background-color: rgba(232,236,241,0.9);
+    }
+
+    .bg-dslate-5 { /* Dark Slate 50 */
       background-color: rgba(115,147,167,0.5);
     }
 
-    .bg-dgrey-5 { /* Dark Grey */
+    .bg-dslate-9 { /* Dark Slate 90 */
+      background-color: rgba(115,147,167,0.9);
+    }
+
+    .bg-dgrey-5 { /* Dark Grey 50 */
       background-color: rgba(108,115,126,0.5);
+    }
+
+    .bg-dgrey-9 { /* Dark Grey 90 */
+      background-color: rgba(108,115,126,0.9);
     }
 /* -------------------------------------------------------------------------- */
 /*                                Local Styles                                */

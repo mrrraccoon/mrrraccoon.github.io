@@ -25,14 +25,13 @@
     
     <!-- ---------------------------- Google Fonts and Font Awesome ------------ -->
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap">
-    <!-- Google Fonts -->
-    <script src="https://kit.fontawesome.com/2fc6a1ba93.js" crossorigin="anonymous"></script><!-- Font Awesome-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap"><!-- Google Fonts -->
+    <script src="https://kit.fontawesome.com/2fc6a1ba93.js" crossorigin="anonymous"></script><!-- Font Awesome -->
     
     <!-- --------------------- End of External Stylesheets --------------------- -->
 
 </head>
-<body  class="main-bg-image" onload="covidbanner();">
+<body  class="main-bg-image">
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                             Navigation Bar                              -->
@@ -43,8 +42,8 @@
 
         <div class="w3-panel w3-center"><!-- Navbar Grid -->
                     <span><img class="mItemL" src="/lib/Klym/lib/media/img/logo.png" alt="Klym Fitness" height="100px"></span>
-                    <a href="#waiver"><span id="mItem" class="w3-button w3-hover-orange">Waiver</span></a>
-                    <span id="mItem" class="w3-button w3-hover-orange">Instruction</span>
+                    <a href="#waiver"><span id="mItem" class="w3-button w3-hover-orange w3-bottombar-hover-orange">Waiver</span></a>
+                    <span href="#instruction" class="w3-button w3-hover-orange">Instruction</span>
                     <span id="mItem" class="w3-button w3-hover-orange">Yoga</span>
         </div><!-- end navbar container-->
     
@@ -53,28 +52,28 @@
     <!--                       Main Body Content and Copy                        -->
     <!-- ----------------------------------------------------------------------- -->
 
-<div class="w3-row">    
-    <div class="w3-col l6">
-        <p>
-            Come join us and experience 3000 sq ft of dedicated climbing and yoga! Klym marries kinetic design with athletic science to produce the best climbs around!
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vel dicta optio aliquid, ipsam officia quos excepturi minima sapiente provident dolore ut porro! Ratione eius iure aperiam provident hic, temporibus quae quos velit quam, alias neque, earum molestiae dolorum minima!
-        </p>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta rem, quam labore excepturi similique molestias voluptatem quas.
-        </p>
-    </div>
-    <div class="w3-col l6">
-        <span>
-            
-            <img src="/lib/Klym/lib/media/img/climber_1.jpg" class="" style="height:300px; padding:1rem; float: center;">
-            <img src="https://images.unsplash.com/photo-1509398484917-2a5b6439feef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80" class="" style="height:300px; padding: 1rem; float:center; overflow: hidden;"
+        <div class="w3-row">    
+            <div class="w3-col l6">
+                <p>
+                    Come join us and experience 3000 sq ft of dedicated climbing and yoga! Klym marries kinetic design with athletic science to produce the best climbs around!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vel dicta optio aliquid, ipsam officia quos excepturi minima sapiente provident dolore ut porro! Ratione eius iure aperiam provident hic, temporibus quae quos velit quam, alias neque, earum molestiae dolorum minima!
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta rem, quam labore excepturi similique molestias voluptatem quas.
+                </p>
+            </div>
+            <div class="w3-col l6">
+                <span>
 
-        </span>
-    </div>    
-    
-</div>    
+                    <img src="/lib/Klym/lib/media/img/climber_1.jpg" class="" style="height:300px; padding:1rem; float: center;">
+                    <img src="https://images.unsplash.com/photo-1509398484917-2a5b6439feef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80" class="" style="height:300px; padding: 1rem; float:center; overflow: hidden;"
+                
+                </span>
+            </div>    
+
+        </div>    
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                          Covid Advisory Banner                          -->
@@ -139,13 +138,13 @@
     <!-- --------------------------- Courses Section --------------------------- -->
 
     <div class="w3-padding-16 bg-dslate-5">
-        <h2 class="w3-center">Courses</h2>
+        <a id="instruction"><h2 class="w3-center">Courses</h2></a>
         <p class="w3-center">
             Klym offers a diverse array of classes to take you from waiver to complete comfort on the wall in no time flat.
         </p>
     </div>
     
-    <div class="w3-row w3-padding bg-dslate-5">
+    <div class="w3-row w3-padding bg-dslate-9">
         <div class="w3-col l4">
             <h4>On The Wall:  Basics Climbing</h4>
         <div class="card">
@@ -165,7 +164,7 @@
 
     <!-- ------------------------------ Training ------------------------------- -->
 
-    <div class="bg-dgrey-5">
+    <div class="bg-dgrey-9">
         
         <div class="w3-row">
             
@@ -192,9 +191,10 @@
         </div>
         </div>
     </div>
+    
     <!-- -------------------------------- Yoga --------------------------------- -->
 
-    <div class="bg-lgrey-5">
+    <div class="bg-lgrey-9">
     <div class="w3-center"><h2>Yoga</h2></div>
     <div class="w3-panel">
         
@@ -222,6 +222,8 @@
         <p>The classes are great and the yoga is amazing!</p>
     </div>
     </div>
+
+`<!-- ------------------------------ Site Map ------------------------------- -->
 
     <div id="hours" class="infobox w3-red">
             
