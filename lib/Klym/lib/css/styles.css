@@ -19,22 +19,44 @@ p {
 
 /* ----------------------------- Global Classes ----------------------------- */
 
-.bg-slate {
-  background-color: #b5cfd8;
-}
+  /* ---------------------------- Background colors --------------------------- */
 
-.bg-lgrey {
-  background-color: #e8ecf1;
-}
+  /* --------------------------------- Palette -------------------------------- */
 
-.bg-dslate {
-  background-color: #7393a7;
-}
+    .bg-slate { /* Slate */
+      background-color: rgb(181,207,216);
+    }
 
-.bg-dgrey {
-  background-color: #6c737e;
-}
+    .bg-lgrey { /* Light Grey */
+      background-color: rgb(232,236,241);
+    }
 
+
+    .bg-dslate { /* Dark Slate */
+      background-color: rgb(115,147,167);
+    }
+
+    .bg-dgrey { /* Dark Grey */
+      background-color: rgb(108,115,126);
+    }
+
+  /* --------------------------- 50% Opacity Palette -------------------------- */
+    
+    .bg-slate-5 { /* Slate */
+      background-color: rgba(181,207,216,0.5);
+    }
+
+    .bg-lgrey-5 { /* Light Grey */
+      background-color: rgba(232,236,241,0.5);
+    }
+    
+    .bg-dslate-5 { /* Dark Slate */
+      background-color: rgba(115,147,167,0.5);
+    }
+
+    .bg-dgrey-5 { /* Dark Grey */
+      background-color: rgba(108,115,126,0.5);
+    }
 /* -------------------------------------------------------------------------- */
 /*                                Local Styles                                */
 /* -------------------------------------------------------------------------- */
